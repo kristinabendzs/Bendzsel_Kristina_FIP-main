@@ -10,48 +10,303 @@
     color: #4C2612;
   }
 
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 28px;
+    color: #4C2612;
+  }
+
+.ultra-regular {
+    font-family: "Ultra", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #D82E36;
+}
+ 
+ body {
+    background-color: #fddae1;
+ }
+ 
+ a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+ }
+ 
+ input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+ }
+
+.flavours {
+    color: #D82E36;
+    font-size: 20px;
+}
+
 /* Header */
 
-header {
+#main-header {
+    background-color: #F9F3E8;
+    box-shadow: 0px 2px 10px #967767;
+}
+
+#main-nav {
     background-color: #F9F3E8;
     display: flex;
-    height: 110px;
-    position: fixed;
+    align-items: center;
+    justify-content: end;
 }
 
-header img {
-    height: 60px;
+#logo {
+    margin-bottom: 20px;
+ }
+
+#logo img {
+    min-width: 200px;
+    height: auto;
+}
+
+#profile-icon {
+    max-width: 30px;
+    margin-right: 10px
+}
+
+#shopping-icon {
+    max-width: 60px;
+    margin-right: 10px;
+}
+
+#main-nav button {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/burger.svg) no-repeat center;
+    margin-top: 15px;
+    transition: all .5s ease;
+    margin-bottom: 20px;
+    border: none;
+    background-size: contain;
+ }
+ 
+ #main-nav button.expanded {
+    transform: rotate(90deg);
+ }
+ 
+ #burger-con {
     margin-top: 20px;
-}
-
-header nav ul {
+    margin-bottom: 20px;
+    display: none;
+ }
+ 
+ #burger-con.slide-toggle {
+    display: block;
+ }
+ 
+ #main-nav ul li a:hover {
+    color: #370400;
+ }
+ 
+ #main-nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 60px
+    margin: 0;
+ }
+ 
+ #main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #000000;
+ }
+ 
+ #main-nav ul li {
+    border-bottom: 1px solid #efefef;
+ }
+ 
+ 
+ #main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+ }
+ 
+ #main-nav ul li:last-child {
+    margin-bottom: 10px;
+ }
+
+
+/* --- Hero Section --- */
+
+#hero img {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    justify-self: center;
+    margin-top: 10px;
+ }
+ 
+ #hero-main {
+    object-fit: cover;
+ }
+ 
+ .hero-text {
+    text-align: center;
+ }
+
+ .hero-text h3 {
+    color: #D82E36;
+    font-size: 50px;
+    text-shadow: 2px 6px 2cqb #f7b9b9;
+ }
+
+.hero-info p {
+    padding-top: 45px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
-header nav ul li {
-    display: inline;
+ /* --- Products --- */
+#products-hmpg {
+    background-color: #F9F3E8;
+    font-size: 30px;
+}
+
+#products-hmpg h2 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#products-hmpg h3 {
+    margin: 15px;
+    text-align: center;
+}
+
+.flavour-info {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
     margin: 20px;
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: #4C2612;
-    font-size: 18px;
+.flavour-info p {
+    padding-left: 10px;
 }
 
-/* Hero Section */
-
-#hero {
-    background-color: #FDDAE1;
+.flavour-info p {
+    padding-left: 10px;
 }
 
-#hero #hero-image {
-    height: 480px;
-    margin-top: 80px;
+.circle {
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #4C2612;
+    border-radius: 50%;
 }
 
-#hero #hero-logo {
-    height: 125px;
-} 
+.see-product {
+    background-color: #bcdd87;
+    padding: 8px;
+    margin: 20px;
+    margin-top:30px;
+    border: 2px solid #4C2612;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.see-product:hover {
+    background-color: rgb(186, 186, 186);
+}
+
+.product-info {
+    color:#D82E36;
+    margin: 15px;
+    font-size: 20px;
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-info h3::before {
+    content:"✔️";
+}
+
+/* --- Testimonials --- */
+.testimonials {
+    background-color: #ef8b8f;
+    font-size: 30px;
+}
+
+.testimonials h2 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.person-1 {
+    display: flex;
+    justify-content: left;
+    background-color: #ef8b8f;
+}
+
+.person-1 img {
+    border: 2px solid #4C2612;
+    border-radius: 50%;
+    height: 150px;
+    margin: 15px;
+}
+
+
+/* ---Tablet Library Grid Styles--- */
+@media screen and (min-width: 768px) {
+    #sticky-nav-con {
+       position: sticky;
+       top: 0px;
+       background-color: #fff;
+       border-bottom: solid 1px #c3c3c3;
+       z-index: 1;
+    }
+ 
+    #main-nav {
+       margin-top: 4%;
+       margin-bottom: 4%;
+       border-left: 2px solid #707070;
+       padding-left: 30px;
+    }
+ 
+    #main-nav ul li a {
+       display: inline;
+    }
+ 
+    #button {
+       display: none;
+    }
+ 
+    #burger-con {
+       display: block;
+       font-size: 12px;
+    }
+ 
+    #burger-con ul li, #burger-con ul li:first-child {
+       border: none;
+       display: inline;
+    }
+ 
+    #burger-con ul li {
+       margin-right: 10px;
+    }
+ 
+    #burger-con ul li:last-child {
+       margin-right: 0px;
+    }
+ 
+    #logo {
+       margin-top: 32px;
+       order: -1;
+    }
+ 
+    #book-now-header {
+       display: flex;
+       margin-right: -16px;
+    }}
