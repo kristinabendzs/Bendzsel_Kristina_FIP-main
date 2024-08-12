@@ -26,7 +26,7 @@
 }
  
  body {
-    background-color: #fddae1;
+    background-color: #f3afc9;
  }
  
  a {
@@ -60,7 +60,9 @@
 }
 
 #logo {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
  }
 
 #logo img {
@@ -85,7 +87,7 @@
     background: url(../images/burger.svg) no-repeat center;
     margin-top: 15px;
     transition: all .5s ease;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: none;
     background-size: contain;
  }
@@ -149,7 +151,9 @@
  }
  
  .hero-text {
-    text-align: center;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 25px;
  }
 
  .hero-text h3 {
@@ -159,9 +163,10 @@
  }
 
 .hero-info p {
-    padding-top: 45px;
-    padding-left: 75px;
-    padding-right: 75px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
  /* --- Products --- */
