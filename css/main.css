@@ -3,26 +3,34 @@
     display: none;
 }
 
-.poppins-regular {
+.poppins-regular-h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #4C2612;
-  }
+    padding-left: 20px;
+}
 
-  .poppins-bold {
+.poppins-regular-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    color: #4C2612;
+}
+
+.poppins-bold {
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-style: normal;
     line-height: 28px;
     color: #4C2612;
-  }
+}
 
-.ultra-regular {
-    font-family: "Ultra", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #D82E36;
+.subheading {
+    margin: 15px;
+    margin-left: 25px;
+
 }
  
  body {
@@ -45,11 +53,10 @@
     font-size: 20px;
 }
 
-/* Header */
+/* --- Header --- */
 
 #main-header {
     background-color: #F9F3E8;
-    box-shadow: 0px 2px 10px #967767;
 }
 
 #main-nav {
@@ -72,12 +79,14 @@
 
 #profile-icon {
     max-width: 30px;
-    margin-right: 10px
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 #shopping-icon {
     max-width: 60px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 #main-nav button {
@@ -90,6 +99,7 @@
     margin-bottom: 10px;
     border: none;
     background-size: contain;
+    cursor: pointer;
  }
  
  #main-nav button.expanded {
@@ -139,34 +149,52 @@
 
 /* --- Hero Section --- */
 
-#hero img {
+#hero-image img {
     grid-column: 1/-1;
     grid-row: 1/1;
     justify-self: center;
-    margin-top: 10px;
  }
  
  #hero-main {
     object-fit: cover;
  }
  
- .hero-text {
-    text-align: left;
-    margin-top: 15px;
-    margin-left: 25px;
+ #hero-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 25px 30px 25px;
  }
 
- .hero-text h3 {
+ #hero-text h3 {
     color: #D82E36;
-    font-size: 50px;
-    text-shadow: 2px 6px 2cqb #f7b9b9;
+    line-height: 55px;;
+    font-size: 60px;
+    text-shadow: 2px 6px 2cqb #F9F3E8;
+    padding-bottom: 20px;
  }
 
 .hero-info p {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    font-size: 18px;
+    margin: 10px 0px 25px 25px;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+#shop-now {
+    color: white;
+    background-color: #D82E36;
+    width: 200px;
+    padding: 8px;
+    border: 2px solid #4C2612;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#shop-now:hover {
+    background-color: rgb(186, 186, 186);
 }
 
  /* --- Products --- */
@@ -185,11 +213,20 @@
     text-align: center;
 }
 
+.can-image img {
+    width: 175px;
+    height: 175px;
+    border: 2px solid #4C2612;
+    border-radius: 50%;
+}
+
 .flavour-info {
     font-size: 14px;
+    height: 650x;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     text-align: left;
     margin: 20px;
 }
@@ -203,7 +240,6 @@
 }
 
 .circle {
-    background-color: green;
     width: 150px;
     height: 150px;
     border: 2px solid #4C2612;
@@ -211,7 +247,8 @@
 }
 
 .see-product {
-    background-color: #bcdd87;
+    color: white;
+    background-color: #D82E36;
     padding: 8px;
     margin: 20px;
     margin-top:30px;
@@ -226,7 +263,7 @@
 }
 
 .product-info {
-    color:#D82E36;
+    color:#4C2612;
     margin: 15px;
     font-size: 20px;
     line-height: 45px;
@@ -240,28 +277,40 @@
 
 /* --- Testimonials --- */
 .testimonials {
-    background-color: #ef8b8f;
+    background-color: #deedc6;
     font-size: 30px;
 }
 
-.testimonials h2 {
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
 
-.person-1 {
+.comment {
     display: flex;
     justify-content: left;
-    background-color: #ef8b8f;
+    align-items: center;
+    background-color: #f7cfde;
+    padding: 25px;
+    margin: 20px;
+    border: 2px solid #4C2612;
+    border-radius: 5px;;
+    
 }
 
-.person-1 img {
+.comment img {
     border: 2px solid #4C2612;
     border-radius: 50%;
     height: 150px;
-    margin: 15px;
+    margin-right: 25px
 }
 
+.comment p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* --- Connect With Us --- */
+.socials {
+    background-color:#F9F3E8;
+    font-size: 30px;
+}
 
 /* ---Tablet Library Grid Styles--- */
 @media screen and (min-width: 768px) {
