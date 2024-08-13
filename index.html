@@ -18,12 +18,18 @@
     
     <div id="sticky-nav-con">
         <header class="poppins-regular grid-con" id="main-header">
-            <nav id="main-nav" class="col-start-4">
-                <h2 class="hidden">Main Navigation</h2>
-                    <img id="profile-icon" src="images/profile.svg" alt="Profile Icon">
-                    <img id="shopping-icon" src="images/shopping-cart.svg" alt="Shopping Cart Icon">
+            <div id="logo" class="col-start-1 m-col-start-2">
+                <div>
+                    <img src="images/swerve-logo-main.svg" alt="Swerve Logo">
+                </div>
+            </div>
+            <div class="icons col-start-4 m-col-start-9">
+                <img id="profile-icon" src="images/profile.svg" alt="Profile Icon">
+                <img id="shopping-icon" src="images/shopping-cart.svg" alt="Shopping Cart Icon">
+                <nav id="main-navigation">
+                    <h2 class="hidden">Main Navigation</h2>
                     <button id="button"></button>
-                    <div id="burger-con">
+                    <div id="burger-con" class="poppins-regular">
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#">Products</a></li>
@@ -31,48 +37,35 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
-            </nav>
-            <div id="logo" class="col-span-full">
-                <div>
-                    <img src="images/swerve-logo-main.svg" alt="Swerve Logo">
-                </div>
+                </nav>
             </div>
         </header>
     </div>
     
-    <section id="hero-image" class="grid-con">
-        <h2 class="hidden">Hero section image</h2>
-        <img
-            sizes="(max-width: 1400px) 100vw, 1400px"
-            srcset="
-            images/swerve-cans-hero-finished_rtp6go_c_scale,w_200.png 200w,
-            images/swerve-cans-hero-finished_rtp6go_c_scale,w_453.png 453w,
-            images/swerve-cans-hero-finished_rtp6go_c_scale,w_634.png 634w,
-            images/swerve-cans-hero-finished_rtp6go_c_scale,w_775.png 775w,
-            images/swerve-cans-hero-finished_rtp6go_c_scale,w_866.png 866w,
-            images/swerve-cans-hero-finished_rtp6go_c_scale,w_961.png 961w,
-            images/swerve-cans-hero-finished_rtp6go_c_scale,w_1061.png 1061w,
-            images/swerve-cans-hero-finished_rtp6go_c_scale,w_1159.png 1159w,
-            images/swerve-cans-hero-finished_rtp6go_c_scale,w_1242.png 1242w,
-            images/swerve-cans-hero-finished_rtp6go_c_scale,w_1321.png 1321w,
-            images/swerve-cans-hero-finished_rtp6go_c_scale,w_1400.png 1400w"
-            src="images/swerve-cans-hero-finished_rtp6go_c_scale,w_1400.png"
-            alt="Swerve Hero Image">
-    </section>
-    <section id="hero-text">
-        <h2 class="hidden">Hero section text</h2>
-        <div class="col-span-full">
-            <h3 class="poppins-bold">Milk Made Modern</h3>
+
+    <section id="hero" class="full-width-grid-con">
+            <img src="images/swerve-cans-hero.png" id="hero-main">
         </div>
-        <div class="hero-info poppins-regular-text col-span-full">
+        <div class="grid-con">
+            <div id="hero-text" class="col-start-1 col-end-2 m-col-start-1 ">
+                <h2 class="poppins-bold">Milk Made Modern</h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid-con">
+        <div id="hero-text2" class="col-span-full m-col-start-2 m-col-end-12"> 
+            <div id="hero-info" class="poppins-regular-text">
             <p>We’ve revived the brand you loved, and we’re here to stay, 
-                ready to deliver the drink and smiles you’ve been missing!</p>
+            ready to deliver the drink and smiles you’ve been missing!</p>
+            </div>
+            <div id="shop-now" class="poppins-regular-text ">
+                Shop Now
+            </div>
         </div>
-        <div id="shop-now" class="poppins-regular-text">
-            Shop Now
-        </div>
-    </section>
-    <div class="wave col-span-full" style="height: 150px; overflow: hidden;" >
+    </div>
+
+    <div class="wave" style="height: 150px; overflow: hidden;" >
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
             <path d="M0.00,50.03 C263.67,164.56 304.30,-61.10 500.00,50.03 L500.00,150.11 L0.00,150.11 Z" style="stroke: none; fill: #F9F3E8;">
         </path></svg></div>
@@ -80,7 +73,7 @@
 
     <section id="products-hmpg" class="grid-con">
         <h2 class="poppins-regular-h2 col-span-full">Our Products</h2>
-        <div class="flavour-info poppins-regular-text col-start-1 col-span-2">
+        <div class="flavour-info poppins-regular-text col-start-1 col-span-2 m-col-start-1 m-col-end-7">
             <div class="can-image">
                 <img
                 sizes="(max-width: 1230px) 100vw, 1230px"
@@ -94,15 +87,15 @@
                 src="images/swerve-can-strawberry-final_r1v8gx_c_scale,w_1230.png"
                 alt="Strawberry Flavour can">
             </div>
-            <div class="col-start-1">
+            <div>
                 <h3><span class="flavours">Original Strawberry</span></h3>
                 <p>Dive into nostalgia with our classic Strawberry flavour! 
                 It’s bursting with the sweet, fruity taste of ripe strawberries, 
                 making every sip a deliciously refreshing trip down memory lane.</p>
-                <div class="see-product">See Product</div>
             </div>
+            <div class="see-product">See Product</div>
         </div>
-        <div class="flavour-info poppins-regular-text col-start-3 col-span-2">
+        <div class="flavour-info poppins-regular-text col-start-3 col-span-2 m-col-start-7 m-col-end-13">
             <div class="can-image">
                 <img
                 sizes="(max-width: 1230px) 100vw, 1230px"
@@ -121,10 +114,10 @@
                 <p>Chocolate Hazelnut flavour offers a richer, smoother alternative 
                     to traditional chocolate milk, providing a balanced 
                     chocolate drink minus the overpowering sweetness.</p>
-                <div class="see-product">See Product</div>
             </div>
+            <div class="see-product">See Product</div>
         </div>
-        <div class="flavour-info poppins-regular-text col-start-1 col-span-2">
+        <div class="flavour-info poppins-regular-text col-start-1 col-span-2 m-col-start-1 m-col-end-7">
             <div class="can-image">
                 <img
                 sizes="(max-width: 1230px) 100vw, 1230px"
@@ -143,10 +136,10 @@
                 <p>Vanilla Banana flavor blends creamy vanilla with the subtle
                     sweetness of banana, creating a smooth and satisfying drink 
                     that's perfect for a light and refreshing treat.</p>
-                <div class="see-product">See Product</div>
             </div>
+            <div class="see-product">See Product</div>
         </div>
-        <div class="flavour-info poppins-regular-text col-start-3 col-span-2">
+        <div class="flavour-info poppins-regular-text col-start-3 col-span-2 m-col-start-7 m-col-end-13">
             <div class="can-image">
                 <img
                 sizes="(max-width: 1230px) 100vw, 1230px"
@@ -165,8 +158,8 @@
                 <p>Honeydew Melon flavour is the ultimate refresher for a hot day,
                      combining the sweet, citrusy notes of honeydew with a light, 
                      revitalizing taste that's perfect for cooling down</p>
-                <div class="see-product">See Product</div>
             </div>
+            <div class="see-product">See Product</div>
         </div>
         <section class="product-info poppins-bold col-span-full">
             <h2 class="hidden">Product Information</h2>
@@ -201,20 +194,17 @@
             <p>"There's really nothing like Swerve. The vibrancy of these flavours is hard to find 
                 anywhere else, let along get it perfect!" - Matt F, Woodstock ON</p>
         </div>
-        <div class="wave col-span-full" style="height: 150px; overflow: hidden;" >
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M0.00,50.03 C263.67,164.56 304.30,-61.10 500.00,50.03 L500.00,150.11 L0.00,150.11 Z" style="stroke: none; fill: #F9F3E8;">
-                </path></svg></div>
     </section>
 
     <section class="grid-con socials">
         <h2 class="poppins-regular-h2 col-span-full">Connect with Us</h2>
-        <div class="socials-text poppins-regular-text">
-            <p>We have a lot more flavours and limited edition specialties coming out very soon, 
-                so give us a follow on our social media to keep updated!</p>
-        </div>
-        <div class="social-image">
-            <img src="images/strawberry-1882400_1280.jpg">
+        <div class="socials-box col-span-full">
+            <div class="poppins-regular-text">
+                <p>We have a lot more flavours and limited edition specialties coming out very soon, so give us a follow on our social media to keep updated!</p>
+            </div>
+            <div class="social-image">
+                <img src="images/strawberry-1882400_1280.jpg">
+            </div>
         </div>
     </section>
 
