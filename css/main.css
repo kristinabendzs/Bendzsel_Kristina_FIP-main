@@ -130,6 +130,7 @@
  }
  
  #burger-con {
+    width: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
     display: none;
@@ -137,6 +138,7 @@
  
  #burger-con.slide-toggle {
     display: block;
+    
  }
  
  #main-navigation ul li a:hover {
@@ -153,7 +155,7 @@
     display: block;
     padding: 10px 0 10px 0;
     text-align: center;
-    color: #000000;
+    color: #4C2612;
  }
  
  #main-navigation ul li {
