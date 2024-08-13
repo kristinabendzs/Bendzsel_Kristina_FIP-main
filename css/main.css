@@ -34,11 +34,17 @@
 }
  
  body {
-    background-color: #f3afc9;
+    background: rgb(235,158,189);
+    background: linear-gradient(90deg, rgba(235,158,189,1) 0%, rgba(250,152,218,1) 36%, rgba(154,230,129,1) 100%);
  }
  
  a {
     text-decoration: none;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    color: #4c2612;
     transition: all .5s ease-in-out;
  }
  
@@ -53,21 +59,16 @@
     font-size: 20px;
 }
 
+
 /* --- Header --- */
 
 #main-header {
     background-color: #F9F3E8;
-}
-
-#main-nav {
-    background-color: #F9F3E8;
-    display: flex;
-    align-items: center;
-    justify-content: end;
+    box-shadow: 4px 5px 10px #4C2612;
 }
 
 #logo {
-    margin-bottom: 10px;
+    margin: 15px;
     display: flex;
     justify-content: center;
  }
@@ -75,6 +76,12 @@
 #logo img {
     min-width: 200px;
     height: auto;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #profile-icon {
@@ -89,7 +96,11 @@
     cursor: pointer;
 }
 
-#main-nav button {
+#shopping-icon img {
+    min-width: 30px;
+}
+
+#main-navigation button {
     min-width: 30px;
     width: 30px;
     height: 30px;
@@ -102,7 +113,7 @@
     cursor: pointer;
  }
  
- #main-nav button.expanded {
+ #main-navigation button.expanded {
     transform: rotate(90deg);
  }
  
@@ -116,70 +127,86 @@
     display: block;
  }
  
- #main-nav ul li a:hover {
-    color: #370400;
+ #main-navigation ul li a:hover {
+    color: #ff1100;
  }
  
- #main-nav ul {
+ #main-navigation ul {
     list-style: none;
     padding: 0;
     margin: 0;
  }
  
- #main-nav ul li a {
+ #main-navigation ul li a {
     display: block;
     padding: 10px 0 10px 0;
     text-align: center;
     color: #000000;
  }
  
- #main-nav ul li {
-    border-bottom: 1px solid #efefef;
+ #main-navigation ul li {
+    border-bottom: 1px solid #cdabab;
  }
  
  
- #main-nav ul li:first-child {
-    border-top: 1px solid #efefef;
+ #main-navigation ul li:first-child {
+    border-top: 1px solid #cdabab;
  }
  
- #main-nav ul li:last-child {
+ #main-navigation ul li:last-child {
     margin-bottom: 10px;
  }
 
 
 /* --- Hero Section --- */
-
-#hero-image img {
+#hero img {
     grid-column: 1/-1;
     grid-row: 1/1;
     justify-self: center;
  }
  
  #hero-main {
+    height: 400px;
     object-fit: cover;
  }
  
+ #hero .grid-con {
+    /* Telling this grid to live in the middle column */
+    grid-column: 2/3;
+    /* also telling it stay in the first row, so it overlaps the hero image */
+    grid-row:1/1;
+    /* get rid of margin 0 auto from the original class */
+    margin: 0;
+ }
+ 
+
  #hero-text {
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     margin: 30px 25px 30px 25px;
  }
 
- #hero-text h3 {
+ #hero-text h2 {
     color: #D82E36;
-    line-height: 55px;;
-    font-size: 60px;
+    line-height: 80px;
+    font-size: 80px;
     text-shadow: 2px 6px 2cqb #F9F3E8;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
  }
 
-.hero-info p {
+ #hero-text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+#hero-info p {
+    text-align: center;
     font-size: 18px;
-    margin: 10px 0px 25px 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin: 25px;
 }
 
 #shop-now {
@@ -187,6 +214,7 @@
     background-color: #D82E36;
     width: 200px;
     padding: 8px;
+    margin: 10px;
     border: 2px solid #4C2612;
     border-radius: 5px;
     cursor: pointer;
@@ -209,7 +237,7 @@
 }
 
 #products-hmpg h3 {
-    margin: 15px;
+    margin: 10px 0px 10px 0px;
     text-align: center;
 }
 
@@ -222,11 +250,10 @@
 
 .flavour-info {
     font-size: 14px;
-    height: 650x;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: left;
     margin: 20px;
 }
@@ -249,9 +276,9 @@
 .see-product {
     color: white;
     background-color: #D82E36;
-    padding: 8px;
+    width: 150px;
+    padding: 10px;
     margin: 20px;
-    margin-top:30px;
     border: 2px solid #4C2612;
     border-radius: 5px;
     cursor: pointer;
@@ -279,8 +306,8 @@
 .testimonials {
     background-color: #deedc6;
     font-size: 30px;
+    padding-bottom: 100px;
 }
-
 
 .comment {
     display: flex;
@@ -310,6 +337,29 @@
 .socials {
     background-color:#F9F3E8;
     font-size: 30px;
+    padding-top: 60px;;
+}
+
+.socials h2 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.socials-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-image {
+    margin: 15px;
+    width: 100%;
+}
+.social-image img {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #4C2612;
+    border-radius: 50%;
 }
 
 /* ---Tablet Library Grid Styles--- */
@@ -318,49 +368,81 @@
        position: sticky;
        top: 0px;
        background-color: #fff;
-       border-bottom: solid 1px #c3c3c3;
        z-index: 1;
     }
- 
-    #main-nav {
-       margin-top: 4%;
-       margin-bottom: 4%;
-       border-left: 2px solid #707070;
-       padding-left: 30px;
-    }
- 
-    #main-nav ul li a {
-       display: inline;
-    }
- 
+
     #button {
-       display: none;
+        display: none;
+     }
+
+    .icons {
+        display:flex;
+        justify-content: center;
     }
- 
+   
     #burger-con {
-       display: block;
-       font-size: 12px;
+        display: inline-block; 
     }
- 
-    #burger-con ul li, #burger-con ul li:first-child {
-       border: none;
-       display: inline;
+
+    #main-navigation ul li {
+        border: none;
+        padding-left: 15px;
     }
- 
-    #burger-con ul li {
-       margin-right: 10px;
+
+    #main-navigation ul {
+        display: flex;
+        justify-content: center;
     }
- 
-    #burger-con ul li:last-child {
-       margin-right: 0px;
+
+    #main-navigation ul li:first-child {
+        border-top: none;
+     }
+     
+     #main-navigation ul li:last-child {
+        margin-bottom: 0%;
+     }
+
+     #profile-icon {
+        margin-right: 10px;
+        cursor: pointer;
     }
- 
+    
+    #shopping-icon {
+        margin-right: 0px;
+        cursor: pointer;
+    }
+
     #logo {
-       margin-top: 32px;
-       order: -1;
+        margin-left: 40px;
     }
- 
-    #book-now-header {
-       display: flex;
-       margin-right: -16px;
-    }}
+
+    /* --- hero section --- */
+    #hero-main {
+        height: 550px;
+     }
+    
+     #hero-text h2 {
+        line-height: 110px;
+        font-size: 90px;
+     }
+    
+    #hero-info p {
+        font-size: 24px;
+        margin: 25px;
+    }
+    
+    #shop-now {
+        color: white;
+        background-color: #D82E36;
+        width: 200px;
+        padding: 8px;
+        margin: 10px;
+        border: 2px solid #4C2612;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+    /* --- Products --- */
+
+}
+
