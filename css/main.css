@@ -95,12 +95,15 @@
 
 .icons {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-right: 25px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: top;
+    margin-right: 25px;
 }
 
 #profile-icon {
+    margin-top: 40px;
     min-width:30px;
     margin-right: 10px;
     cursor: pointer;
@@ -108,7 +111,8 @@
 
 #shopping-icon {
     min-width: 60px;
-    margin-right: 10px;
+    margin-top: 25px;
+    margin-right: 15px;
     cursor: pointer;
 }
 
@@ -117,9 +121,8 @@
     width: 30px;
     height: 30px;
     background: url(../images/burger.svg) no-repeat center;
-    margin-top: 15px;
     transition: all .5s ease;
-    margin-bottom: 10px;
+    margin-top: 40px;
     border: none;
     background-size: contain;
     cursor: pointer;
@@ -128,7 +131,7 @@
  #main-navigation button.expanded {
     transform: rotate(90deg);
  }
- 
+
  #burger-con {
     width: 200px;
     margin-top: 20px;
@@ -398,7 +401,12 @@
 /* --- Footer --- */
 footer {
     background-color: #FFD2D4;
-    padding: 30px;;
+    padding: 30px;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: center;
 }
 
 #contact-info {
@@ -416,6 +424,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right:60px;
 }
 
 #footer-nav ul {
@@ -434,7 +443,7 @@ footer {
     text-align: center;
 }
 
-#footer-contact-info h3 {
+.footer1 h3 {
     color: #D82E36
 }
 
@@ -452,8 +461,8 @@ footer {
      }
 
     .icons {
-        display:flex;
-        justify-content: center;
+        display: flex;
+        justify-content: space-evenly;
     }
    
     #burger-con {
@@ -467,9 +476,11 @@ footer {
 
     #main-navigation ul {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
-
+    #main-navigation ul li {
+        padding-top: 15px;
+    }
     #main-navigation ul li:first-child {
         border-top: none;
      }
@@ -481,11 +492,13 @@ footer {
      #profile-icon {
         margin-right: 10px;
         cursor: pointer;
+        max-width: 30px;
     }
     
     #shopping-icon {
         margin-right: 0px;
         cursor: pointer;
+        max-width: 30px;
     }
 
     #logo {
@@ -531,7 +544,17 @@ footer {
         font-size: 18px;
     }
     /* --- Connect with us --- */
-
 }
-    /* --- Connect with us --- */
 
+
+/* ---Tablet Library Grid Styles--- */
+@media screen and (min-width: 1200px) {
+    #hero-main {
+        height: 700px;
+     }
+
+     #hero-text h2 {
+        line-height: 125px;
+        font-size: 120px;
+     }
+}
