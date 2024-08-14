@@ -76,7 +76,6 @@
 
 
 /* --- Header --- */
-
 #main-header {
     background-color: #F9F3E8;
     box-shadow: 4px 5px 10px #4C2612;
@@ -180,6 +179,7 @@
     grid-column: 1/-1;
     grid-row: 1/1;
     justify-self: center;
+    filter: drop-shadow(5px 5px 20px #F9F3E8);
  }
  
  #hero-main {
@@ -188,15 +188,11 @@
  }
  
  #hero .grid-con {
-    /* Telling this grid to live in the middle column */
     grid-column: 2/3;
-    /* also telling it stay in the first row, so it overlaps the hero image */
     grid-row:1/1;
-    /* get rid of margin 0 auto from the original class */
     margin: 0;
  }
  
-
  #hero-text {
     text-align: left;
     display: flex;
@@ -206,10 +202,11 @@
  }
 
  #hero-text h2 {
+    z-index:0;
     color: #D82E36;
     line-height: 80px;
     font-size: 70px;
-    text-shadow: 2px 6px 2cqb #F9F3E8;
+    text-shadow: 5px 5px 10px #F9F3E8;
     padding-bottom: 10px;
  }
 
@@ -247,7 +244,9 @@
     background-color: #F9F3E8;
     font-size: 30px;
 }
-
+#products-hmpg h2 {
+    margin-bottom: 45px;
+}
 
 #products-hmpg h3 {
     margin: 10px 0px 10px 0px;
@@ -255,8 +254,8 @@
 }
 
 .can-image img {
-    width: 175px;
-    height: 175px;
+    width: 225px;
+    height: 225px;
     border: 2px solid #4C2612;
     border-radius: 50%;
 }
@@ -266,7 +265,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: left;
     margin: 20px;
 }
@@ -299,20 +298,17 @@
 }
 
 .see-product:hover {
-    background-color: rgb(186, 186, 186);
-}
-
-.product-info {
-    color:#4C2612;
-    margin: 15px;
-    font-size: 20px;
-    line-height: 45px;
-    display: flex;
-    justify-content: center;
+    background-color: rgb(219, 242, 194);
+    color: #4c2612;
 }
 
 .product-info h3::before {
     content:"✔️";
+}
+
+.product-info {
+    margin-top: 50px;
+    line-height: 50px;
 }
 
 /* --- Testimonials --- */
@@ -534,10 +530,8 @@ footer {
 
     /* --- products ---- */
     .can-image img {
-        width: 200px;
-        height: 200px;
-        border: 2px solid #4C2612;
-        border-radius: 50%;
+        width: 325px;
+        height: 325px;
     }
 
     .flavour-info {
@@ -557,8 +551,11 @@ footer {
         line-height: 125px;
         font-size: 120px;
      }
+     .can-image img {
+        width: 200px;
+        height: 200px;
 }
-
+}
 
 /* --- Product Page Styling ---*/
 .product-header {
@@ -568,39 +565,61 @@ footer {
     text-shadow: 2px 6px 2cqb #F9F3E8;
 }
 
+.flavours2 {
+    color: #D82E36;
+    font-size: 30px;
+}
+
+.see-product2 {
+    color: white;
+    background-color: #D82E36;
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid #4C2612;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.can-image2 {
+    cursor: pointer;
+}
+
+.can-image2:hover {
+    animation: rotateimg 1s ease-in-out;
+}
+
+@keyframes rotateimg {
+      100% {transform: rotate(360deg);}
+}
 /* --- lightbox ---- */
 .lightbox { 
     width: 100vw; /* vw = viewport width => screen width */
     height: 100vh; /* vh = viewport height => screen height */
-
     position: absolute;
     top: 0;
     left: 0;
-
-    background-color: rgba(0, 0, 0, 0.85);
-    background-image: url('../images/Cap_LB_Bg.png');
+    background-image: url(../images/swerve-can-strawberry-lb.png);
+    background-size: 95%;
     background-repeat: no-repeat;
-
-    background-size: 55vh; /* 55% of the viewport height */
-    background-position: 40px bottom;
-
+    background-color: rgba(20, 15, 14, 0.92);
     z-index: 5000;
-
     display: none;
 }
 
-#lightbox2 { background-image: url('../images/Thor_LB_Bg.png'); }
+#lightbox2 { background-image: url(../images/swerve-can-chocolate-lb.png);}
+#lightbox3 { background-image: url(); }
+#lightbox4 { background-image: url(); }
 
 .lightbox_close {
     position: relative;
     top: 20px;
-    left: 95%;
-
+    left: 85%;
     color: white;
-    font-size: 3em;
-
+    font-family: 'poppins';
+    font-size: 80px;
     text-decoration: none;
-
     font-weight: bolder;
 }
 
@@ -609,11 +628,38 @@ footer {
 .lightbox article {
     width: 55%;
     margin-left: 40%;
-    padding-top: 50px;
+    padding-top: 5%;
 }
 
 /* turn the lightbox on using the :target pseudo selector */
 .lightbox:target { display: block; }
+
+.lb_heading {
+    color:#D82E36;
+    font-family: 'poppins';
+    font-size: 25px;
+    text-align: left;
+}
+
+.lb_text { 
+    color: #F9F3E8;
+    font-family: 'poppins';
+    font-size: 16px;
+    text-align: left; 
+    line-height: 1.6 !important;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+.lb_text2 {
+    color: #F9F3E8;
+    font-family: 'poppins';
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6 !important;
+    margin-top: 15px;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -623,6 +669,9 @@ footer {
         text-align: left;
     }
     
+    .see-product2 {
+        width: 250px;
+    }
     .can-image2 img  {
             width: 300px;
             height: 300px;
@@ -633,10 +682,51 @@ footer {
     .can-image3 {
         margin-top: 45px
     }
+
+    .lb_heading {
+        font-size: 34px;
+    }
+    
+    .lb_text { 
+        color: #F9F3E8;
+        font-size: 20px;
+    }
+    
+    .lb_text2 {
+        font-size: 20px;
 }
+
 
 @media screen and (min-width: 1200px) {
 .flavour-info2 p {
     font-size: 16px;
 }
+
+.lb_heading {
+    font-size: 50px;
+}
+
+.lb_text { 
+    font-size: 26px;
+}
+
+
+.lb_text2 {
+    font-size: 26px;
+}}
+
+@media screen and (min-width: 1920px) {
+    .lb_heading {
+        font-size: 70px;
+    }
+    
+    .lb_text { 
+        font-size: 36px;
+    }
+    
+    
+    .lb_text2 {
+        font-size: 36px;
+    }}
+    
 }
