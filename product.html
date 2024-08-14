@@ -42,10 +42,19 @@
         </header>
     </div>
 
+    <header class="grid-con">
+        <h2 class="product-header poppins-regular-h2 col-span-full l-col-start-2">Our Products</h2>
+    </header>
+
+    <div class="wave" style="height: 150px; overflow: hidden;" >
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,50.03 C263.67,164.56 304.30,-61.10 500.00,50.03 L500.00,150.11 L0.00,150.11 Z" style="stroke: none; fill: #F9F3E8;">
+        </path></svg></div>
+
     <section id="products-hmpg" class="grid-con">
-        <h2 class="poppins-regular-h2 col-span-full">Our Products</h2>
-        <div class="flavour-info poppins-regular-text col-start-1 col-span-2 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-4">
-            <div class="can-image">
+        <h2 class="hidden">Products</h2>
+        <div class="flavour-info poppins-regular-text col-start-1 col-span-2 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+            <div class="can-image can-image2">
                 <img
                 sizes="(max-width: 1230px) 100vw, 1230px"
                 srcset="
@@ -64,12 +73,10 @@
                 It’s bursting with the sweet, fruity taste of ripe strawberries, 
                 making every sip a deliciously refreshing trip down memory lane.</p>
             </div>
-            <h4 class="poppins-regular-text">product information +</h4>
-            <h4 class="poppins-regular-text">ingredients +</h4>
             <div class="see-product">See Product</div>
         </div>
-        <div class="flavour-info poppins-regular-text col-start-3 col-span-2 m-col-start-7 m-col-end-13 l-col-start-4 l-col-end-7">
-            <div class="can-image">
+        <div class="flavour-info poppins-regular-text col-start-3 col-span-2 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+            <div class="can-image can-image2">
                 <img
                 sizes="(max-width: 1230px) 100vw, 1230px"
                 srcset="
@@ -90,8 +97,8 @@
             </div>
             <div class="see-product">See Product</div>
         </div>
-        <div class="flavour-info poppins-regular-text col-start-1 col-span-2 m-col-start-1 m-col-end-7 l-col-start-7 l-col-end-10">
-            <div class="can-image">
+        <div class="flavour-info flavour-info2 poppins-regular-text col-start-1 col-span-2 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+            <div class="can-image can-image2 can-image3">
                 <img
                 sizes="(max-width: 1230px) 100vw, 1230px"
                 srcset="
@@ -112,8 +119,8 @@
             </div>
             <div class="see-product">See Product</div>
         </div>
-        <div class="flavour-info poppins-regular-text col-start-3 col-span-2 m-col-start-7 m-col-end-13 l-col-start-10 l-col-end-13">
-            <div class="can-image">
+        <div class="flavour-info flavour-info2 poppins-regular-text col-start-3 col-span-2 m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13">
+            <div class="can-image can-image2 can-image3">
                 <img
                 sizes="(max-width: 1230px) 100vw, 1230px"
                 srcset="
@@ -134,19 +141,19 @@
             </div>
             <div class="see-product">See Product</div>
         </div>
-        </section>
     </section>      
 
     <footer>
-        <div class="grid-con">
-            <section id="footer-contact-info" class="poppins-footer col-start-1 col-span-2 m-col-start-2 m-col-end-5">
+        <div class="grid-con footer1">
+            <div id="footer-contact-info" class="poppins-footer">
                 <div id="contact-info">
                     <h3>Swerve - Milk Made Modern</h3>
                     <p>108 Highland Road West, Stoney Creek, Ontario</p>
                     <p> phone: 905 555 9281</p>
                         e-mail: info@swerveco.com
-            </section>
-            <div id="footer-nav" class="col-start-3 col-end-5">
+                </div>
+            </div>
+            <div id="footer-nav">
                 <nav>
                     <h2 class="hidden">Footer Nav</h2>
                         <ul>
@@ -157,11 +164,17 @@
                         </ul>
                 </nav>
             </div>
-            <div id="bottom-text" class="poppins-footer col-span-full m-col-start-2 m-col-end-12">
-                    <p>Copyright© 2024 Swerve | Designed by Kristina Bendzsel </p>
-                </div>
-            </div>
+        </div>
+    <div id="bottom-text" class="poppins-footer col-span-full m-col-start-2 m-col-end-12">
+            <p>Copyright© 2024 Swerve | Designed by Kristina Bendzsel </p>
+    </div>
     </footer>
+    <section class="lightbox" id="lightbox">
+        <a href="" class="lightbox_close">x</a>
+        <article>
+        
+        </article>
+    </section>
     <script src="js/main.js"></script>
 </body>
 </html>
