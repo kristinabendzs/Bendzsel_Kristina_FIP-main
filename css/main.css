@@ -558,3 +558,85 @@ footer {
         font-size: 120px;
      }
 }
+
+
+/* --- Product Page Styling ---*/
+.product-header {
+    font-size: 75px;
+    margin-top: 50px;
+    color: #4c2612;
+    text-shadow: 2px 6px 2cqb #F9F3E8;
+}
+
+/* --- lightbox ---- */
+.lightbox { 
+    width: 100vw; /* vw = viewport width => screen width */
+    height: 100vh; /* vh = viewport height => screen height */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url('../images/Cap_LB_Bg.png');
+    background-repeat: no-repeat;
+
+    background-size: 55vh; /* 55% of the viewport height */
+    background-position: 40px bottom;
+
+    z-index: 5000;
+
+    display: none;
+}
+
+#lightbox2 { background-image: url('../images/Thor_LB_Bg.png'); }
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+
+    color: white;
+    font-size: 3em;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+}
+
+.lightbox_close:hover { opacity: 0.5; color: red; }
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+/* turn the lightbox on using the :target pseudo selector */
+.lightbox:target { display: block; }
+
+
+@media screen and (min-width: 768px) {
+    .product-header {
+        font-size: 100px;
+        margin-top: 15px;
+        text-align: left;
+    }
+    
+    .can-image2 img  {
+            width: 300px;
+            height: 300px;
+            border: 2px solid #4C2612;
+            border-radius: 50%;
+        }
+
+    .can-image3 {
+        margin-top: 45px
+    }
+}
+
+@media screen and (min-width: 1200px) {
+.flavour-info2 p {
+    font-size: 16px;
+}
+}
