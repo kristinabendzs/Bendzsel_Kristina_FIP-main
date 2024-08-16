@@ -8,14 +8,15 @@
     font-weight: 400;
     font-style: normal;
     color: #4C2612;
-    font-size: 45px;
+    font-size: 56px;
     padding-left: 35px;
+    margin-bottom: 15px;
 }
 
 .poppins-regular-text {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     color: #4C2612;
     padding-left: 15px;
@@ -45,10 +46,6 @@
     font-style: normal;
     color: #c1957e;
 }
-.subheading {
-    margin: 15px;
-    margin-left: 25px;
-}
  
  body {
     background: rgb(235,158,189);
@@ -73,7 +70,8 @@
 
 .flavours {
     color: #D82E36;
-    font-size: 20px;
+    font-size: 46px;
+
 }
 
 /* --- Header --- */
@@ -246,9 +244,6 @@
     background-color: #F9F3E8;
     font-size: 30px;
 }
-#products-hmpg h2 {
-    margin-bottom: 45px;
-}
 
 #products-hmpg h3 {
     margin: 10px 0px 10px 0px;
@@ -256,8 +251,8 @@
 }
 
 .can-image img {
-    width: 225px;
-    height: 225px;
+    width: 275px;
+    height: 275px;
     border: 2px solid #4C2612;
     border-radius: 50%;
 }
@@ -276,9 +271,6 @@
     padding-left: 10px;
 }
 
-.flavour-info p {
-    padding-left: 10px;
-}
 
 .circle {
     width: 150px;
@@ -314,11 +306,19 @@
     margin-bottom: 30px;
 }
 
+/* --- Promotions --- */
+.promo-materials {
+    background-color: #f7cfde;
+}
+
 /* --- Testimonials --- */
 .testimonials {
     background-color: #deedc6;
-    font-size: 30px;
     padding-bottom: 100px;
+}
+
+.testimonials h3 {
+    margin-left:15px;
 }
 
 .comment {
@@ -330,7 +330,6 @@
     margin: 20px;
     border: 2px solid #4C2612;
     border-radius: 5px;;
-    
 }
 
 .comment img {
@@ -341,31 +340,37 @@
 }
 
 .comment p {
-    font-size: 16px;
     font-style: italic;
 }
 
 /* --- Connect With Us --- */
-.socials {
+#connect {
     background-color:#F9F3E8;
-    font-size: 30px;
-    padding-top: 60px;
+
     padding-bottom: 100px;
 }
-.sm-icons {
+
+#connect h3 {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.connect-icons {
     margin: 15px;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
 }
-.sm-icons img {
+.connect-icons img {
     width: 100px;
     cursor: pointer;
 }
 
+
 .lum {
     margin-top: 25px;
 }
+
 .submit-fields {
     margin-left: 20px;
     display: flex;
@@ -396,6 +401,8 @@
     cursor: pointer;
     text-align: left;
 }
+
+
 
 /* --- Footer --- */
 footer {
@@ -455,6 +462,42 @@ footer {
        z-index: 1;
     }
 
+    .poppins-regular-h2 {
+        font-size: 55px;
+    }
+
+    .poppins-regular-text {
+        font-size: 26px;
+    }
+    
+    .poppins-bold {
+        line-height: 48px;
+    }
+
+    .flavours {
+        color: #D82E36;
+        font-size: 40px;
+    }
+
+    .flavour-info {
+        font-size: 32px;
+    }
+
+    .product-info {
+        margin-top: 50px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .comment p {
+        font-size: 22px;
+    }
+
+    #connect h3 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
     #button {
         display: none;
      }
@@ -504,7 +547,6 @@ footer {
         margin-left: 40px;
     }
 
-    /* --- hero section --- */
     #hero-main {
         height: 550px;
      }
@@ -532,8 +574,6 @@ footer {
         font-size: 24px
     }
 
-
-    /* --- products ---- */
     .can-image img {
         width: 325px;
         height: 325px;
@@ -541,6 +581,13 @@ footer {
 
     .flavour-info {
         font-size: 20px;
+    }
+
+    .comment img {
+        border: 2px solid #4C2612;
+        border-radius: 50%;
+        height: 200px;
+        margin-right: 25px
     }
 }
 
@@ -551,16 +598,63 @@ footer {
         height: 700px;
      }
 
+     .poppins-regular-h2 {
+        font-size: 55px;
+    }
+
+    .poppins-regular-text {
+        font-size: 26px;
+    }
+    
+    .poppins-bold {
+        line-height: 48px;
+    }
+
+    .flavours {
+        color: #D82E36;
+        font-size: 40px;
+    }
+
+    .flavour-info {
+        font-size: 32px;
+    }
+
+    .product-info {
+        margin-top: 50px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .comment p {
+        font-size: 22px;
+    }
+
+    #connect h3 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
      #hero-text h2 {
         line-height: 125px;
         font-size: 120px;
      }
      .can-image img {
-        width: 200px;
-        height: 200px;
+        width: 400px;
+        height: 400px;
 }
 }
 
+@media screen and (min-width: 1920px) {
+    #hero-text h2 {
+        line-height: 125px;
+        font-size: 140px;
+     }
+
+     .can-image img {
+        width: 500px;
+        height: 500px;
+}
+}
 /* --- Product Page Styling ---*/
 .product-header {
     font-size: 75px;
