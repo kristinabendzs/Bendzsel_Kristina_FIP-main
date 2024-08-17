@@ -8,7 +8,7 @@
     font-weight: 800;
     font-style: normal;
     color: #4C2612;
-    font-size: 56px;
+    font-size: 46px;
     padding-left: 35px;
     margin-bottom: 15px;
 }
@@ -673,17 +673,31 @@ footer {
     text-align: center;
 }
 
-.can-image2 {
+#strawberry-flavour, #chocolate-flavour, #banana-flavour, #honeydew-flavour {
+    background-image: url(../images/milk-splash2.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+
+.can-img-product {
     cursor: pointer;
 }
 
-.can-image2:hover {
-    animation: rotateimg 1s ease-in-out;
+.flavour-info2 img {
+    transition: transform 0.3s ease-in-out;
 }
 
-@keyframes rotateimg {
-      100% {transform: rotate(360deg);}
+.flavour-info2 img:hover {
+    transform: scale(1.4) translateX(8px) rotate(10deg);
 }
+
+.quantity-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* --- lightbox ---- */
 .lightbox { 
     width: 100vw; /* vw = viewport width => screen width */
@@ -691,17 +705,14 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../images/swerve-can-strawberry-lb.png);
-    background-size: 95%;
+    background-image: url(../images/nutrition-label.png);
     background-repeat: no-repeat;
+    background-position: 5% 15%;
+    background-size: 30%;
     background-color: rgba(20, 15, 14, 0.92);
     z-index: 5000;
     display: none;
 }
-
-#lightbox2 { background-image: url(../images/swerve-can-chocolate-lb.png);}
-#lightbox3 { background-image: url(); }
-#lightbox4 { background-image: url(); }
 
 .lightbox_close {
     position: relative;
