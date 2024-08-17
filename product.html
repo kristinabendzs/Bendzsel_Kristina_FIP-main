@@ -17,13 +17,11 @@
     <h1 class="hidden">Welcome to Swerve</h1>
     
     <div id="sticky-nav-con">
-        <header class="poppins-regular" id="main-header">
-            <div class="grid-con">
-                <div id="logo" class="col-start-1 m-col-start-2">
-                    <img src="images/swerve-logo-main.svg" alt="Swerve Logo">  
-                </div> 
+        <header class="poppins-regular grid-con" id="main-header">
+            <div id="logo" class="col-start-1 col-end-2 m-col-start-1 m-col-end-4">
+                <img src="images/swerve-logo-main.svg" alt="Swerve Logo">
             </div>
-            <div class="icons col-start-4 m-col-start-8 m-col-end-11 l-col-start-8 l-col-end-11">
+            <div class="icons col-start-3 col-end-4 m-col-start-7 m-col-end-12 l-col-start-8 l-col-end-11">
                 <img id="profile-icon" src="images/profile.svg" alt="Profile Icon">
                 <img id="shopping-icon" src="images/shopping-cart.svg" alt="Shopping Cart Icon">
                 <nav id="main-navigation">
@@ -53,9 +51,19 @@
     <section class="flavours-section grid-con">
         <h2 class="hidden">Products</h2>
         <p class="poppins-regular-text col-span-full l-col-start-2">Check out our current flavours! <br> Order single cans or packs of 6. </p>
-        <div class="flavour-info flavour-info2 poppins-regular-text col-span-full m-col-start-1 m-col-end-7 l-col-start-2 l-col-end-7">
+        <div class="flavour-info2 poppins-regular-text col-span-full m-col-start-1 m-col-end-7 l-col-start-2 l-col-end-7">
             <div id="strawberry-flavour" class="can-img-product">
-                <img src="images/strawberry-nobckgrd.png" alt="Strawberry flavour can">
+                <img
+                    sizes="(max-width: 1230px) 100vw, 1230px"
+                    srcset="
+                    images/strawberry-nobckgrd_aceuxy_c_scale,w_200.png 200w,
+                    images/strawberry-nobckgrd_aceuxy_c_scale,w_539.png 539w,
+                    images/strawberry-nobckgrd_aceuxy_c_scale,w_767.png 767w,
+                    images/strawberry-nobckgrd_aceuxy_c_scale,w_948.png 948w,
+                    images/strawberry-nobckgrd_aceuxy_c_scale,w_1097.png 1097w,
+                    images/strawberry-nobckgrd_aceuxy_c_scale,w_1230.png 1230w"
+                    src="images/strawberry-nobckgrd_aceuxy_c_scale,w_1230.png"
+                    alt="strawberry swerve can">
                 <h3><span class="flavours2">Original Strawberry</span></h3>
             </div>
             <a href="#lightbox" data-hero-index="0">
@@ -67,9 +75,19 @@
             </div>
         </div>
 
-        <div class="flavour-info flavour-info2 poppins-regular-text col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-12">
+        <div class="flavour-info2 poppins-regular-text col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-12">
             <div id="chocolate-flavour" class="can-img-product">
-                <img src="images/chocolate-nobckgrd.png" alt="Chocolate hazelnut flavour can">
+                <img
+                    sizes="(max-width: 1230px) 100vw, 1230px"
+                    srcset="
+                    images/chocolate-nobackgrd_u8s6ha_c_scale,w_200.png 200w,
+                    images/chocolate-nobackgrd_u8s6ha_c_scale,w_547.png 547w,
+                    images/chocolate-nobackgrd_u8s6ha_c_scale,w_778.png 778w,
+                    images/chocolate-nobackgrd_u8s6ha_c_scale,w_967.png 967w,
+                    images/chocolate-nobackgrd_u8s6ha_c_scale,w_1125.png 1125w,
+                    images/chocolate-nobackgrd_u8s6ha_c_scale,w_1230.png 1230w"
+                    src="images/chocolate-nobackgrd_u8s6ha_c_scale,w_1230.png"
+                    alt="Chocolate hazelnut flavour can">
                 <h3><span class="flavours2">Chocolate Hazelnut</span></h3>
             </div>
             <a href="#lightbox" data-hero-index="1">
@@ -81,9 +99,19 @@
             </div>
         </div>
 
-        <div class="flavour-info flavour-info2 poppins-regular-text col-span-full m-col-start-1 m-col-end-7 l-col-start-2 l-col-end-7">
+        <div class="flavour-info2 poppins-regular-text col-span-full m-col-start-1 m-col-end-7 l-col-start-2 l-col-end-7">
             <div id="banana-flavour" class="can-img-product">
-                <img src="images/banana-nobckgrd.png" alt="Vanilla banana flavour can">
+                <img
+                sizes="(max-width: 1230px) 100vw, 1230px"
+                srcset="
+                images/banana-bckgrd_xxslxa_c_scale,w_200.png 200w,
+                images/banana-bckgrd_xxslxa_c_scale,w_543.png 543w,
+                images/banana-bckgrd_xxslxa_c_scale,w_774.png 774w,
+                images/banana-bckgrd_xxslxa_c_scale,w_957.png 957w,
+                images/banana-bckgrd_xxslxa_c_scale,w_1102.png 1102w,
+                images/banana-bckgrd_xxslxa_c_scale,w_1230.png 1230w"
+                src="images/anana-bckgrd_xxslxa_c_scale,w_1230.png"
+                alt="Vanilla banana flavour can">
                 <h3><span class="flavours2">Vanilla Banana</span></h3>
             </div>
             <a href="#lightbox" data-hero-index="2">
@@ -95,9 +123,19 @@
             </div>
         </div>
 
-        <div class="flavour-info flavour-info2 poppins-regular-text col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-12">
+        <div class="flavour-info2 poppins-regular-text col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-12">
             <div id="honeydew-flavour" class="can-img-product">
-                <img src="images/honeydew-nobckgrd.png" alt="Honeydew melon flavour can">
+                <img
+                sizes="(max-width: 1230px) 100vw, 1230px"
+                srcset="
+                images/honeydew-nobckgrd_kpar4i_c_scale,w_200.png 200w,
+                images/honeydew-nobckgrd_kpar4i_c_scale,w_543.png 543w,
+                images/honeydew-nobckgrd_kpar4i_c_scale,w_777.png 777w,
+                images/honeydew-nobckgrd_kpar4i_c_scale,w_971.png 971w,
+                images/honeydew-nobckgrd_kpar4i_c_scale,w_1109.png 1109w,
+                images/honeydew-nobckgrd_kpar4i_c_scale,w_1230.png 1230w"
+                src="images/honeydew-nobckgrd_kpar4i_c_scale,w_1230.png"
+                alt="Honeydew melon flavour can">
                 <h3><span class="flavours2">Honeydew Melon</span></h3>
             </div>
             <a href="#lightbox" data-hero-index="3">
