@@ -17,12 +17,11 @@
     <h1 class="hidden">Welcome to Swerve</h1>
     
     <div id="sticky-nav-con">
-        <header class="poppins-regular" id="main-header">
-            <div class="grid-con">
-                <div id="logo" class="col-start-1 m-col-start-2">
-                    <img src="images/swerve-logo-main.svg" alt="Swerve Logo">   
+        <header class="poppins-regular grid-con" id="main-header">
+            <div id="logo" class="col-start-1 col-end-2 m-col-start-1 m-col-end-4">
+                <img src="images/swerve-logo-main.svg" alt="Swerve Logo">
             </div>
-            <div class="icons col-start-4 m-col-start-8 m-col-end-11 l-col-start-8 l-col-end-11">
+            <div class="icons col-start-3 col-end-4 m-col-start-7 m-col-end-12 l-col-start-8 l-col-end-11">
                 <img id="profile-icon" src="images/profile.svg" alt="Profile Icon">
                 <img id="shopping-icon" src="images/shopping-cart.svg" alt="Shopping Cart Icon">
                 <nav id="main-navigation">
@@ -171,8 +170,19 @@
 
 
     <section class="promo-materials grid-con">
-            <h2 class="poppins-regular-h2 col-span-full xl-col-start-3 xl-col-span-2">Promotions!</h2>
-            <div class="wave col-span-full" style="height: 150px; overflow: hidden;" >
+        <h2 class="poppins-regular-h2 col-span-full xl-col-start-3 xl-col-span-2">Promotions!</h2>
+        <div class="col-span-full">
+            <div id="image-gallery">
+              <div id="image-slider">
+                <img class="gallery-image" src="images/originalstrawberry-promotions.png" alt="A Humming bird">
+                <img class="gallery-image" src="images/honeydewmelon-promotions.png" alt="A singl blue Bird">
+                <img class="gallery-image" src="images/chocolate-promotions.png" alt="Two Blue birds on a branch">
+              </div>     
+              <button id="prev-button">&#10094; Previous</button>
+              <button id="next-button">Next &#10095;</button>
+            </div>
+            </div>
+        <div class="wave col-span-full" style="height: 150px; overflow: hidden;" >
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                     <path d="M0.00,50.03 C263.67,164.56 304.30,-61.10 500.00,50.03 L500.00,150.11 L0.00,150.11 Z" style="stroke: none; fill: #deedc6;">
                     </path></svg></div>

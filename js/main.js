@@ -1,7 +1,13 @@
-// variables
+// Variables
 const lightbox = document.querySelector('#lightbox');
 const content = document.querySelector('#lightbox article');
 const links = document.querySelectorAll(".flavour-info a");
+const slider = document.querySelector('#image-slider');
+const prevBut = document.querySelector('#prev-button');
+const nextBut = document.querySelector('#next-button');
+let slideWidth = slider.clientWidth
+
+let currentIndex = 0;
 
 let flavours = [
     {
@@ -26,7 +32,35 @@ let flavours = [
     }
 ];
 
-// functions 
+// Index Page functions 
+function showSlide(index) {
+    const newTransformValue = -index * slideWidth + 'px';
+    slider.style.transform = 'translateX(' + newTransformValue + ')';
+}
+
+function nextSlide() {
+    currentIndex++;
+    if (currentIndex >= slider.children.length) {
+        currentIndex = 0;
+    }
+    showSlide(currentIndex);
+}
+
+function prevSlide() {
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = slider.children.length-1;
+    }
+    showSlide(currentIndex);
+}
+
+function updateSlideWidth() {
+    slideWidth = slider.clientWidth;
+    showSlide(currentIndex);
+}
+
+// Product Page functions
+
 function fillContent() {
     console.log(this.dataset.heroIndex);
 
@@ -67,5 +101,10 @@ function fillContent() {
     burger.addEventListener("click", hamburgerMenu, false);
 })();
 
-// event listeners 
+// Event Listeners 
 links.forEach(link => link.addEventListener('click', fillContent));
+nextBut.addEventListener('click', nextSlide);
+prevBut.addEventListener('click', prevSlide);
+window.addEventListener('resize', updateSlideWidth);
+
+updateSlideWidth();
