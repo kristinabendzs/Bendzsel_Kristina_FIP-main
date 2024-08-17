@@ -1,4 +1,4 @@
-// Variables
+// Home Page Gallery
 const lightbox = document.querySelector('#lightbox');
 const content = document.querySelector('#lightbox article');
 const links = document.querySelectorAll('.flavour-info2 a');
@@ -26,9 +26,6 @@ let flavours = [
     }
 ];
 
-
-// Product Page functions
-
 function fillContent(e) {
     console.log(this.dataset.heroIndex);
 
@@ -53,6 +50,9 @@ function fillContent(e) {
     content.appendChild(flavourIngred);
 }
 
+links.forEach(link => link.addEventListener('click', fillContent));
+
+// Burger Icon Function
 (function () {
     "use strict";
     console.log('fired');
@@ -68,5 +68,42 @@ function fillContent(e) {
     burger.addEventListener("click", hamburgerMenu, false);
 })();
 
-// Event Listeners 
-links.forEach(link => link.addEventListener('click', fillContent));
+(() => {
+    const slider = document.querySelector('#image-slider');
+    const prevBut = document.querySelector('#prev-button');
+    const nextBut = document.querySelector('#next-button');
+    let slideWidth = slider.clientWidth
+    let currentIndex = 0;
+    
+    function showSlide(index) {
+       const newTransformValue = -index * slideWidth + 'px';
+       slider.style.transform = 'translateX(' + newTransformValue + ')';
+    }
+    
+    function nextSlide() {
+       currentIndex++;
+       if (currentIndex >= slider.children.length) {
+           currentIndex = 0;
+       }
+       showSlide(currentIndex);
+    }
+    
+    function prevSlide() {
+       currentIndex--;
+       if (currentIndex < 0) {
+           currentIndex = slider.children.length-1;
+       }
+       showSlide(currentIndex);
+    }
+    
+    function updateSlideWidth() {
+       slideWidth = slider.clientWidth;
+       showSlide(currentIndex);
+    }
+    
+    nextBut.addEventListener('click', nextSlide);
+    prevBut.addEventListener('click', prevSlide);
+    window.addEventListener('resize', updateSlideWidth);
+    updateSlideWidth();
+    
+})();
