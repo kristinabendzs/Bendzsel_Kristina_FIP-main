@@ -5,10 +5,10 @@
 
 .poppins-regular-h2 {
     font-family: "Poppins", sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     font-style: normal;
     color: #4C2612;
-    font-size: 30px;
+    font-size: 36px;
     padding-left: 35px;
     margin-bottom: 15px;
 }
@@ -93,7 +93,7 @@
     justify-content: center;
     align-items: flex-start;
     align-items: top;
-    margin-left: 30px;
+    margin-left: 80px;
 }
 
 #profile-icon {
@@ -192,7 +192,7 @@
     margin: 0;
  }
  
- #hero-text {
+ #hero-title {
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -200,7 +200,7 @@
     margin: 30px 25px 30px 25px;
  }
 
- #hero-text h2 {
+ #hero-title h2 {
     z-index:0;
     color: #D82E36;
     line-height: 80px;
@@ -209,7 +209,7 @@
     padding-bottom: 10px;
  }
 
- #hero-text2 {
+ #hero-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -240,42 +240,36 @@
     color: #F9F3E8;
 }
 
- /* --- Products --- */
-#products-hmpg {
+ /* --- Flavours --- */
+.flavours-section {
     background-color: #F9F3E8;
 }
 
-#products-hmpg h3 {
+.flavours-section h3 {
     margin: 10px 0px 10px 0px;
     text-align: center;
 }
 
 .can-image img {
-    width: 275px;
-    height: 275px;
-    border: 2px solid #4C2612;
+    min-width: 200px;
+    height: 200px;
+    border: 3px solid #4C2612;
     border-radius: 50%;
+    box-shadow: 5px 5px 7px #4C2612;
 }
 
 .flavour-info {
     font-size: 16px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     text-align: left;
     margin: 10px;
 }
 
 .flavour-info p {
-    padding-left: 10px;
-}
-
-.circle {
-    width: 150px;
-    height: 150px;
-    border: 2px solid #4C2612;
-    border-radius: 50%;
+    padding-left: 20px;
 }
 
 .see-product {
@@ -311,56 +305,61 @@
     background-color: #f7cfde;
 }
 
-#image-gallery{
-    margin-left: 20px;
-    margin-right: 20px;
-    overflow:hidden;
-    position:relative
+#image-gallery {
+    margin: 0 40px 40px 40px;
+    overflow: hidden;
+    position: relative
 }
 
-#image-slider{
-    display:flex;
-    transition:transform .3s ease-in-out
+#image-slider {
+    display: flex;
+    transition: transform .3s ease-in-out
 }
 
-.gallery-image{
-    max-width:100%;
-    height:auto;
+.gallery-image {
+    height: auto;
     border: 3px solid #4C2612;
     border-radius: 4px;
 }
 
-#prev-button, #next-button{
+#prev-button, #next-button {
     position:absolute;
-    top:50%;
+    top: 88%;
     width: 90px;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
     font-family: 'poppins';
     color: #4C2612;
     font-size: 12px;
     cursor: pointer;
-    padding:10px;
-    border:none;
-    background-color:rgba(255, 248, 248, 0.6)
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 248, 248, 0.5)
 }
 
 #prev-button{
-    left:0px
+    left: 0px;
 }
 
 #next-button{
-    right:0px
+    right: 0px;
 }
 
+#commercial {
+    margin: 0px 40px 40px 40px;
+}
+
+#commerical video {
+    border: 3px solid #4C2612;
+    border-radius: 4px;
+}
 
 /* --- Testimonials --- */
 .testimonials {
     background-color: #deedc6;
-    padding-bottom: 100px;
 }
 
 .testimonials h3 {
-    margin-left:15px;
+    margin: 0px 20px 0px 20px;
 }
 
 .comment {
@@ -371,7 +370,7 @@
     padding: 25px;
     margin: 20px;
     border: 2px solid #4C2612;
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 
 .comment img {
@@ -388,24 +387,20 @@
 /* --- Connect With Us --- */
 #connect {
     background-color:#F9F3E8;
-    padding-bottom: 100px;
-}
-#connect img {
-    margin-left: 15px;
-}
-#strawberry-milk {
-    margin-top: 35px;
+    padding-bottom: 50px;
 }
 
-#connect h2 {
-    margin-top: 35px;
+#strawberry-milk {
+    margin-top: 50px;
+}
+
+#strawberry-milk img {
+    height: auto;
 }
 
 #connect h3 {
-    font-size: 20px;
-    padding-left: 0px;
+    margin: 0px 20px 0px 20px;
 }
-
 .connect-icons {
     margin: 20px;
     display: flex;
@@ -416,6 +411,7 @@
     width: 100px;
     cursor: pointer;
 }
+
 
 
 
@@ -478,39 +474,15 @@ footer {
     }
 
     .poppins-regular-h2 {
-        font-size: 55px;
+        font-size: 50px;
     }
 
     .poppins-regular-text {
-        font-size: 26px;
+        font-size: 22px;
     }
     
     .poppins-bold {
         line-height: 48px;
-    }
-
-    .flavours {
-        color: #D82E36;
-        font-size: 40px;
-    }
-
-    .flavour-info {
-        font-size: 32px;
-    }
-
-    .product-info {
-        margin-top: 50px;
-        line-height: 50px;
-        margin-bottom: 30px;
-    }
-
-    .comment p {
-        font-size: 22px;
-    }
-
-    #connect h3 {
-        font-size: 20px;
-        margin-left: 15px;
     }
 
     #button {
@@ -563,14 +535,15 @@ footer {
 
     #logo {
         margin-left: 40px;
-        width: 200px
+        width: 200px;
+        margin: 20px 20px 10px 30px;
     }
 
     #hero-main {
         height: 550px;
      }
     
-     #hero-text h2 {
+     #hero-title h2 {
         line-height: 110px;
         font-size: 90px;
      }
@@ -581,32 +554,52 @@ footer {
     }
     
     #shop-now {
-        color: white;
-        background-color: #D82E36;
         width: 300px;
         padding: 8px;
         margin: 10px;
-        border: 2px solid #4C2612;
-        border-radius: 5px;
-        cursor: pointer;
-        text-align: center;
         font-size: 24px
     }
 
-    .can-image img {
-        width: 325px;
-        height: 325px;
+    .flavour-info {
+        margin: 20px
     }
 
-    .flavour-info {
-        font-size: 20px;
+    .flavour-info p {
+        font-size: 22px;
+        margin-left: 25px;
+    }
+    
+    .can-image img {
+        min-width: 300px;
+        height: 300px;
+    }
+
+    .flavours {
+        color: #D82E36;
+        font-size: 30px;
+    }
+
+    .product-info {
+        margin-top: 50px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .comment p {
+        font-size: 18px;
     }
 
     .comment img {
         border: 2px solid #4C2612;
         border-radius: 50%;
-        height: 200px;
+        min-width: 200px;
+        min-height: 200px;
         margin-right: 25px
+    }
+
+    #connect h3 {
+        font-size: 20px;
+        margin-left: 15px;
     }
 }
 
@@ -653,7 +646,7 @@ footer {
         margin-left: 15px;
     }
 
-     #hero-text h2 {
+     #hero-title h2 {
         line-height: 125px;
         font-size: 120px;
      }
@@ -664,7 +657,7 @@ footer {
 }
 
 @media screen and (min-width: 1920px) {
-    #hero-text h2 {
+    #hero-title h2 {
         line-height: 125px;
         font-size: 140px;
      }
@@ -725,6 +718,20 @@ footer {
 
 .can-img-product {
     cursor: pointer;
+}
+
+.flavour-info2 {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 10px;
+}
+
+.flavour-info2 p {
+    padding-left: 10px;
 }
 
 .flavour-info2 img {
