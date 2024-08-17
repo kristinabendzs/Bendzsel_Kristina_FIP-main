@@ -26,7 +26,6 @@
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-style: normal;
-    line-height: 28px;
     color: #4C2612;
 }
 
@@ -81,14 +80,11 @@
 }
 
 #logo {
-    margin: 15px;
-    display: flex;
-    justify-content: center;
+    margin: 30px 30px 0px 20px;
  }
 
 #logo img {
-    min-width: 200px;
-    height: auto;
+    min-width: 150px;
 }
 
 .icons {
@@ -97,7 +93,7 @@
     justify-content: center;
     align-items: flex-start;
     align-items: top;
-    margin-right: 25px;
+    margin-left: 30px;
 }
 
 #profile-icon {
@@ -131,10 +127,13 @@
  }
 
  #burger-con {
-    width: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: #F9F3E8;
+    width: 100%;
+    left: 0;
+    padding-top: 20px;
+    margin-bottom: 10px;
     display: none;
+    position: fixed;
  }
  
  #burger-con.slide-toggle {
@@ -157,6 +156,7 @@
     padding: 10px 0 10px 0;
     text-align: center;
     color: #4C2612;
+    font-size: 14px;
  }
  
  #main-navigation ul li {
@@ -258,19 +258,18 @@
 }
 
 .flavour-info {
-    font-size: 22px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: left;
-    margin: 20px;
+    margin: 10px;
 }
 
 .flavour-info p {
     padding-left: 10px;
 }
-
 
 .circle {
     width: 150px;
@@ -301,6 +300,7 @@
 }
 
 .product-info {
+    font-size: 22px;
     margin-top: 50px;
     line-height: 50px;
     margin-bottom: 30px;
@@ -310,6 +310,48 @@
 .promo-materials {
     background-color: #f7cfde;
 }
+
+#image-gallery{
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow:hidden;
+    position:relative
+}
+
+#image-slider{
+    display:flex;
+    transition:transform .3s ease-in-out
+}
+
+.gallery-image{
+    max-width:100%;
+    height:auto;
+    border: 3px solid #4C2612;
+    border-radius: 4px;
+}
+
+#prev-button, #next-button{
+    position:absolute;
+    top:50%;
+    width: 90px;
+    transform:translateY(-50%);
+    font-family: 'poppins';
+    color: #4C2612;
+    font-size: 12px;
+    cursor: pointer;
+    padding:10px;
+    border:none;
+    background-color:rgba(255, 248, 248, 0.6)
+}
+
+#prev-button{
+    left:0px
+}
+
+#next-button{
+    right:0px
+}
+
 
 /* --- Testimonials --- */
 .testimonials {
@@ -476,12 +518,14 @@ footer {
      }
 
     .icons {
-        display: flex;
         justify-content: space-evenly;
+        align-items: flex-start;
+        margin-left: 10px;
     }
    
     #burger-con {
-        display: inline-block; 
+        position: relative;
+        display: inline-block;
     }
 
     #main-navigation ul li {
@@ -491,8 +535,9 @@ footer {
 
     #main-navigation ul {
         display: flex;
-        justify-content: flex-start;
+        align-items: center;
     }
+
     #main-navigation ul li {
         padding-top: 15px;
     }
@@ -518,6 +563,7 @@ footer {
 
     #logo {
         margin-left: 40px;
+        width: 200px
     }
 
     #hero-main {
