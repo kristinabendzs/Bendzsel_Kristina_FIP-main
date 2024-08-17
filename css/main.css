@@ -8,7 +8,7 @@
     font-weight: 800;
     font-style: normal;
     color: #4C2612;
-    font-size: 46px;
+    font-size: 30px;
     padding-left: 35px;
     margin-bottom: 15px;
 }
@@ -16,7 +16,7 @@
 .poppins-regular-text {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
     color: #4C2612;
     padding-left: 15px;
@@ -37,14 +37,6 @@
     font-style: normal;
     line-height: 20px;
     color: #4C2612;
-}
-
-.poppins-field {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    font-style: normal;
-    color: #c1957e;
 }
  
  body {
@@ -70,7 +62,7 @@
 
 .flavours {
     color: #D82E36;
-    font-size: 46px;
+    font-size: 24px;
 
 }
 
@@ -231,8 +223,9 @@
 }
 
 #shop-now {
-    color: white;
-    background-color: #D82E36;
+    color: #4C2612;
+    font-size: 18px;
+    background-color: #f7cfde;
     width: 200px;
     padding: 8px;
     margin: 10px;
@@ -243,13 +236,13 @@
 }
 
 #shop-now:hover {
-    background-color: rgb(186, 186, 186);
+    background-color: #D82E36;
+    color: #F9F3E8;
 }
 
  /* --- Products --- */
 #products-hmpg {
     background-color: #F9F3E8;
-    font-size: 30px;
 }
 
 #products-hmpg h3 {
@@ -650,7 +643,7 @@ footer {
 
 /* --- Product Page Styling ---*/
 .product-header {
-    font-size: 75px;
+    font-size: 55px;
     margin-top: 50px;
     color: #4c2612;
     text-shadow: 2px 6px 2cqb #F9F3E8;
@@ -662,15 +655,19 @@ footer {
 }
 
 .see-product2 {
-    color: white;
-    background-color: #D82E36;
-    width: 200px;
+    color: #4C2612;
+    background-color: #deedc6;
+    width: 250px;
     padding: 10px;
-    margin: 20px;
     border: 2px solid #4C2612;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+}
+
+.see-product2:hover {
+    color: #fff;
+    background-color: #94bb56;
 }
 
 #strawberry-flavour, #chocolate-flavour, #banana-flavour, #honeydew-flavour {
@@ -696,8 +693,36 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0 20px 0;
 }
 
+.counter-value {
+    background-color: #FFD2D4;
+    border: 2px solid #4C2612;
+    border-radius: 2px;
+    margin: 5px;
+    width: 75px;
+    height: 25px;
+    text-align: center;
+}
+
+.add-to-cart {
+    width: 100px;
+    height:25px;
+    background-color: #FFD2D4;
+    border: 2px solid #4C2612;
+    border-radius: 2px;
+    margin: 5px;
+    text-align: left;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #D82E36;
+    color: #fff;
+    border: 2px solid #4C2612;
+}
 /* --- lightbox ---- */
 .lightbox { 
     width: 100vw; /* vw = viewport width => screen width */
@@ -707,7 +732,7 @@ footer {
     left: 0;
     background-image: url(../images/nutrition-label.png);
     background-repeat: no-repeat;
-    background-position: 5% 15%;
+    background-position: 5% 25%;
     background-size: 30%;
     background-color: rgba(20, 15, 14, 0.92);
     z-index: 5000;
