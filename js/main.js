@@ -7,22 +7,22 @@ let flavours = [
     {
         name: 'Original Strawberry',
         bio: 'This flavour is our classic. It is the same recipe as before with modified percentages.',
-        ingredients: 'Ingredients: Partly skimmed milk, sugar, natural and artiical strawberry flavour, carrageenan, allura red, vitamin A palmitate, vitamin D3.',
+        ingredients: 'Ingredients: Partly skimmed milk, sugar, natural and artiical strawberry flavour, carrageenan, allura red, vitamin A palmitate.',
     },
     {
         name: 'Chocolate Hazelnut',
         bio: 'Also one of our original flavours, this chocolate milk has hints of hazelnut to really satisfy your cocoa craving.',
-        ingredients: 'Ingredients: Partly skimmed milk, sugar, natural and artfical chocolate flavour, cocoa, hazelnut, carrageenan, allura red, vitamin A palmitate, vitamin D3.',
+        ingredients: 'Ingredients: Partly skimmed milk, sugar, natural and artfical chocolate flavour, cocoa, hazelnut, carrageenan, allura red, vitamin A palmitate.',
     },
     {
         name: 'Vanilla Banana',
-        bio: 'Creamy vanilla mixed with the sweet taste of banana, this drink is perfect for those who want a lighter beverage that is not too rich',
-        ingredients: 'Ingredients: Partly skimmed milk, sugar, vanilla extract, natural and artifical banana flavour, disodium phosphate, carrageenan, vitamin A palmitate, vitamin D3',
+        bio: 'Creamy vanilla mixed with the sweet taste of banana, this drink is perfect for those who want a lighter beverage that is not too rich.',
+        ingredients: 'Ingredients: Partly skimmed milk, sugar, vanilla extract, natural and artifical banana flavour, disodium phosphate, carrageenan, vitamin A palmitate.',
     },
     {
         name: 'Honeydew Melon',
         bio: 'For those who like a little cirtus kick, this flavour is the one for you. Honeydew melon is great on hot summer days when you need a refresher.',
-        ingredients: 'Ingredients: Partly skimmed milk, sugar, natural and artifial honeydew flavour, disodium phosphate, carrageenan, vitamin A palmitate, vitamin D3',
+        ingredients: 'Ingredients: Partly skimmed milk, sugar, natural and artifial honeydew flavour, disodium phosphate, carrageenan, vitamin A palmitate.',
     }
 ];
 
