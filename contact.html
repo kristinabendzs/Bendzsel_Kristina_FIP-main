@@ -17,12 +17,11 @@
     <h1 class="hidden">Welcome to Swerve</h1>
     
     <div id="sticky-nav-con">
-        <header class="poppins-regular" id="main-header">
-            <div class="grid-con">
-                <div id="logo" class="col-start-1 m-col-start-2">
-                    <img src="images/swerve-logo-main.svg" alt="Swerve Logo">   
+        <header class="poppins-regular grid-con" id="main-header">
+            <div id="logo" class="col-start-1 col-end-2 m-col-start-1 m-col-end-4 l-col-start-">
+                <img src="images/swerve-logo-main.svg" alt="Swerve Logo">
             </div>
-            <div class="icons col-start-4 m-col-start-8 m-col-end-11 l-col-start-8 l-col-end-11">
+            <div class="icons col-start-4 col-end-5 m-col-start-6 m-col-end-13 l-col-start-8 l-col-end-13">
                 <img id="profile-icon" src="images/profile.svg" alt="Profile Icon">
                 <img id="shopping-icon" src="images/shopping-cart.svg" alt="Shopping Cart Icon">
                 <nav id="main-navigation">
@@ -41,33 +40,56 @@
         </header>
     </div>
 
-    <div id="strawberry-milk" class="col-start-2 col-end-4 m-col-start-3 m-col-end-10 l-col-start-2 l-col-end-6">
-        <img src="images/strawberry-splash.png" alt="Strawberry Icon">
+    <header class="grid-con">
+        <h2 class="product-header poppins-regular-h2 col-span-full l-col-start-2">Contact</h2>
+        <div class="wave col-span-full" style="height: 150px; overflow: hidden;" >
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,50.03 C263.67,164.56 304.30,-61.10 500.00,50.03 L500.00,150.11 L0.00,150.11 Z" style="stroke: none; fill: #F9F3E8;">
+        </path></svg></div>
+    </header>
+
+    <div id="contact-box" class="grid-con">
+        <h3 class="poppins-bold col-span-full">Leave as a Message!</h3>
+        <h2 class="poppins-regular-text col-span-full">At Swerve, we genuinely care about our customers and what they like, so it's our mission to deliver the best taste and quality in every drink. Your satisfaction drives us, and we’re excited to share all the delicious updates with you. To stay in the know about our latest product launches and special events, follow us on social media. We’re thrilled to keep you connected!</h2>
+        <div id="contact-form" class="poppins-regular-text col-span-full">
+            <form action="#" method="post" enctype="text/plain">
+                <input name="full-name" type="text" required placeholder="First & Last Name">
+                <input name="contact-info" type="text" required placeholder="Phone number or Email">
+                <textarea name="msg" placeholder="Enter Message Here..."></textarea>
+                <input name="submit" type="submit" value="Submit">
+            </form>
+        </div>    
+        <div id="strawberry-milk" class="col-start-2 col-end-4 m-col-start-3 m-col-end-10 l-col-start-2 l-col-end-6">
+            <img src="images/strawberry-splash.png" alt="Strawberry Icon">
+        </div>
     </div>
+    
+
     <footer>
-        <div class="grid-con">
-            <section id="footer-contact-info" class="poppins-footer col-start-1 col-span-2 m-col-start-2 m-col-end-5">
+        <div class="grid-con footer1">
+            <div id="footer-contact-info" class="poppins-footer">
                 <div id="contact-info">
                     <h3>Swerve - Milk Made Modern</h3>
                     <p>108 Highland Road West, Stoney Creek, Ontario</p>
                     <p> phone: 905 555 9281</p>
                         e-mail: info@swerveco.com
-            </section>
-            <div id="footer-nav" class="col-start-3 col-end-5">
+                </div>
+            </div>
+            <div id="footer-nav">
                 <nav>
                     <h2 class="hidden">Footer Nav</h2>
                         <ul>
                             <li><a class="active" href="index.html">Home</a></li>
-                            <li><a href="#">Products</a></li>
+                            <li><a href="/product.html">Products</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                 </nav>
             </div>
-            <div id="bottom-text" class="poppins-footer col-span-full m-col-start-2 m-col-end-12">
-                    <p>Copyright© 2024 Swerve | Designed by Kristina Bendzsel </p>
-                </div>
-            </div>
+        </div>
+    <div id="bottom-text" class="poppins-footer col-span-full m-col-start-2 m-col-end-12">
+            <p>Copyright© 2024 Swerve | Designed by Kristina Bendzsel </p>
+    </div>
     </footer>
     <script src="js/main.js"></script>
 </body>
