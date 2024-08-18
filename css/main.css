@@ -255,6 +255,7 @@
 .flavours-section {
     background-color: #F9F3E8;
 }
+
 .flavours-section h2 {
     margin: 0 25px 25px 25px;
 }
@@ -285,7 +286,6 @@
     margin-left: 20px
 }
 
-
 .see-product {
     color: #F9F3E8;
     background-color: #D82E36;
@@ -305,7 +305,7 @@
 
 .product-info h4 {
     font-size: 4vw;
-    line-height: 5vw;
+    line-height: 6vw;
 }
 .product-info h4::before {
     content:"✔️";
@@ -443,8 +443,8 @@ footer {
 }
 
 #footer-nav ul li a:hover {
-        color: #ff1100;
-     }
+    color: #ff1100;
+}
      
 #footer-nav {
     display: flex;
@@ -496,7 +496,7 @@ footer {
 
     #button {
         display: none;
-     }
+    }
 
     .icons {
         justify-content: right;
@@ -528,11 +528,11 @@ footer {
 
     #main-navigation ul li:first-child {
         border-top: none;
-     }
+    }
      
-     #main-navigation ul li:last-child {
+    #main-navigation ul li:last-child {
         margin-bottom: 0%;
-     }
+    }
 
      #profile-icon {
         cursor: pointer;
@@ -593,7 +593,7 @@ footer {
     
     .product-info h4 {
         font-size: 3vw;
-        line-height: 4vw;
+        line-height: 5vw;
     }
 
     .can-image img {
@@ -626,6 +626,7 @@ footer {
     #contact-info {
         line-height: 28px;
     }
+    
     #contact-info h3, p  {
         font-size: 16px;
     }}
@@ -633,7 +634,6 @@ footer {
 
 /* --- Desktop Library Grid Styles--- */
 @media screen and (min-width: 1200px) {
-
      .poppins-regular-h2 {
         font-size: 54px;
     }
@@ -674,7 +674,7 @@ footer {
 
     .product-info h4 {
         font-size: 2vw;
-        line-height: 3vw;
+        line-height: 3.5vw;
     }
 
     .can-image img {
@@ -713,8 +713,7 @@ footer {
     }
     #contact-info h3, p  {
         font-size: 20px;
-    }
-}
+    }}
 
 @media screen and (min-width: 1920px) {
     #logo{
@@ -741,7 +740,7 @@ footer {
     #hero-title h2 {
         line-height: 8vw;
         font-size: 8vw;
-     }
+    }
 
     #hero-button {
         width: 400px;
@@ -793,8 +792,7 @@ footer {
     .connect-icons img {
         margin: 30px;
         width: 150px;
-    }
-}
+    }}
 
 
 
@@ -986,10 +984,6 @@ footer {
         text-align: left;
     }
     
-    .flavours-section h2 {
-        font-size: 2vw;
-    }
-
     .flavours2 {
         color: #D82E36;
         font-size: 3.4vw;
@@ -1028,10 +1022,6 @@ footer {
 
 
 @media screen and (min-width: 1200px) {
-    .flavours-section h2 {
-        font-size: 1.8vw;
-    }
-
     .flavours2 {
         color: #D82E36;
         font-size: 3vw;
@@ -1050,17 +1040,11 @@ footer {
         font-size: 26px;
     }
 
-
     .lb_text2 {
         font-size: 26px;
     }}
 
 @media screen and (min-width: 1920px) {
-
-    .flavours-section h2 {
-        font-size: 1.4vw;
-    }
-
     .flavours2 {
         color: #D82E36;
         font-size: 2.6vw;
@@ -1095,8 +1079,10 @@ footer {
     
     .lb_text2 {
         font-size: 36px;
-    }
-}
+    }}
+
+
+
 
 
 
@@ -1104,7 +1090,6 @@ footer {
 
 
 /* --- Contact Page Styling--- */
-
 #contact-box {
     background-color: #F9F3E8;
     padding: 0 35px 55px 35px;
@@ -1127,9 +1112,9 @@ footer {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
- }
+}
  
- #contact-form input {
+#contact-form input {
     font-family: 'poppins';
     width: 250px;
     margin: 15px 15px 0px 15px;
@@ -1137,9 +1122,9 @@ footer {
     background-color: #f7cfde;
     border: 2px solid #f3b4b4;
     border-radius: 4px;
- }
+}
 
- #contact-form textarea {
+#contact-form textarea {
     width: 375px;
     font-family: inherit;
     margin: 15px 25px 15px 15px;
@@ -1147,13 +1132,13 @@ footer {
     border: 2px solid #f3b4b4;
     background-color: #f7cfde;
     border-radius: 5px;
- }
+}
  
- #contact-form textarea {
+#contact-form textarea {
     height: 200px;
- }
+}
  
- #contact-form input[type="submit"] {
+#contact-form input[type="submit"] {
     padding: 12px 28px;
     background: #D82E36;
     color: #fff;
@@ -1161,12 +1146,12 @@ footer {
     transition: all 200ms ease-in;
     width: 150px;
     align-self: flex-start;
- }
+}
  
- #contact-form input[type="submit"]:hover {
+#contact-form input[type="submit"]:hover {
     background-color: #c07777;
 
- }
+}
 
 @media screen and (min-width: 768px) {
 #contact-box h3 {
@@ -1184,9 +1169,7 @@ footer {
 
 #contact-form textarea {
     width: 700px
-}
-
-}
+}}
 
 @media screen and (min-width: 1200px) {
     #contact-form input {
@@ -1217,11 +1200,9 @@ footer {
         transition: all 200ms ease-in;
         width: 300px;
         align-self: flex-start;
-     }
-} 
+}} 
 
 @media screen and (min-width: 1920px) {
-
 #contact-form input {
     width: 550px;
     height: 100px;
@@ -1232,8 +1213,4 @@ footer {
     width: 900px;
     height: 400px;
     font-size: 28px
-}
-
-
-
-}
+}}
