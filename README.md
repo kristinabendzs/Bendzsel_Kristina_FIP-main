@@ -1,23 +1,25 @@
-## Swerve Wesbite - Midterm
-This project is for Web Dev 1, and showcases the website for the drink company, Swerve.
+# Swerve Wesbite - FIP
+Welcome to Swerve! This website showcases the revitazlized design and branding for the milk beverage company, Swerve. 
 
-# Installation
+## Installation
 No installation required
 
-# Usage
+## Usage
 Clone the repo, open up the index file in your preferred browser & view the website!
 
-# Contributing
+## Contributing
 Fork it! Create your feature branch: git checkout -b my-new-feature 
 Commit your changes: git commit -am 'Add some feature' 
 Push to the branch: git push origin my-new-feature 
 Submit a pull request
 
 # History
-21 June 2024
+18 August, 2024
 
 # Credits
 Kristina Bendzsel
+All product Images created in Cinema 4D
+Milk slapsh and strawberry image collected from Pixabay.
 
 # License 
 MIT
