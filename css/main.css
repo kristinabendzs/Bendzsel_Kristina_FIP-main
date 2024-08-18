@@ -1,4 +1,4 @@
-/* Main Styling */
+/* --- Main Styling --- */
 .hidden {
     display: none;
 }
@@ -63,8 +63,7 @@
 
 .flavours {
     color: #D82E36;
-    font-size: 24px;
-
+    font-size: 4vw;
 }
 
 /* --- Header --- */
@@ -144,7 +143,7 @@
  }
  
  #main-navigation ul li a:hover {
-    color: #ff1100;
+    color: #D82E36;
  }
  
  #main-navigation ul {
@@ -256,10 +255,12 @@
 .flavours-section {
     background-color: #F9F3E8;
 }
-
+.flavours-section h2 {
+    margin: 0 25px 25px 25px;
+}
 .flavours-section h3 {
-    margin: 10px 0px 10px 0px;
-    text-align: center;
+    margin: 10px 0px 0px 20px;
+    text-align: left;
 }
 
 .can-image img {
@@ -281,8 +282,9 @@
 }
 
 .flavour-info p {
-    padding-left: 20px;
+    margin-left: 20px
 }
+
 
 .see-product {
     color: #F9F3E8;
@@ -301,20 +303,27 @@
     color: #4c2612;
 }
 
-.product-info h3::before {
+.product-info h4 {
+    font-size: 4vw;
+    line-height: 5vw;
+}
+.product-info h4::before {
     content:"✔️";
 }
 
 .product-info {
-    font-size: 22px;
     margin-top: 50px;
-    line-height: 50px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 /* --- Promotions --- */
 .promo-materials {
     background-color: #f7cfde;
+}
+
+.promo-materials h3 {
+    margin: 0 20px 20px 20px;
 }
 
 #image-gallery {
@@ -383,12 +392,14 @@
 .comment img {
     border: 3px solid #4C2612;
     border-radius: 50%;
-    height: 150px;
+    min-width: 100px;
+    height: 100px;
     margin-right: 25px
 }
 
 .comment p {
     font-style: italic;
+    font-size: 2.5vw;
 }
 
 /* --- Connect With Us --- */
@@ -400,12 +411,14 @@
 #connect h3 {
     margin: 0px 20px 0px 20px;
 }
+
 .connect-icons {
     margin: 20px;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
 }
+
 .connect-icons img {
     width: 100px;
     cursor: pointer;
@@ -470,15 +483,15 @@ footer {
     }
 
     .poppins-regular-h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .poppins-regular-text {
-        font-size: 22px;
+        font-size: 18px;
     }
     
     .poppins-bold {
-        line-height: 48px;
+        line-height: 42px;
     }
 
     #button {
@@ -507,6 +520,7 @@ footer {
     #main-navigation ul li a {
         font-size: 16px;
     }
+
     #main-navigation ul {
         display: flex;
         align-items: center;
@@ -532,7 +546,7 @@ footer {
 
     #logo {
         margin-left: 40px;
-        width: 200px;
+        width: 175px;
         margin: 20px 20px 0px 30px;
     }
 
@@ -545,19 +559,16 @@ footer {
      }
 
     #hero-title h2 {
-        font-size: 8vw;
+        font-size: 9vw;
         line-height: 8vw;
         margin-top: 100px;
-    }
-
-    #hero-text {
-        margin-left: 8vw;
+        margin-left: 35px;
     }
 
     #hero-info p {
-        font-size: 1.5vw;;
-        line-height: 3vw;
-        width: 300px;
+        font-size: 2vw;
+        line-height: 2.5vw;
+        width: 30vw
     }
     
     #hero-button {
@@ -565,7 +576,10 @@ footer {
         height: 45px;
         padding: 8px;
         margin: 10px;
-        font-size: 18px
+    }
+
+    #hero-button a {
+        font-size: 18px;
     }
 
     .flavour-info {
@@ -573,47 +587,55 @@ footer {
     }
 
     .flavour-info p {
-        font-size: 22px;
+        font-size: 2vw;
         margin-left: 25px;
     }
     
+    .product-info h4 {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
     .can-image img {
-        min-width: 300px;
-        height: 300px;
+        min-width: 250px;
+        height: 250px;
+    }
+
+    #prev-button, #next-button {
+        width: 110px;
+        font-size: 16px;
     }
 
     .flavours {
-        color: #D82E36;
-        font-size: 30px;
-    }
-
-    .product-info {
-        margin-top: 50px;
-        line-height: 50px;
-        margin-bottom: 30px;
+        font-size: 34px;
     }
 
     .comment p {
-        font-size: 18px;
+        font-size: 1.8vw;
     }
 
     .comment img {
-        min-width: 200px;
-        min-height: 200px;
+        min-width: 100px;
+        height: 100px;
     }
 
-    #connect h3 {
-        font-size: 20px;
-        margin-left: 15px;
+    #footer-nav ul li a {
+        font-size: 18px;
     }
-}
+
+    #contact-info {
+        line-height: 28px;
+    }
+    #contact-info h3, p  {
+        font-size: 16px;
+    }}
 
 
 /* --- Desktop Library Grid Styles--- */
 @media screen and (min-width: 1200px) {
 
      .poppins-regular-h2 {
-        font-size: 55px;
+        font-size: 54px;
     }
 
     .poppins-regular-text {
@@ -625,77 +647,153 @@ footer {
     }
 
     #hero-title h2 {
-        font-size: 8vw;
+        font-size: 8.2vw;
         line-height: 8vw;
         margin-top: 120px;
     }
 
-    #hero-text {
-        margin-left: 6vw;
-    }
-
-    #hero-info p {
-        font-size: 18px;
-        line-height: 3vw;
-        width: 425px
-    }
-    
     #hero-button {
         width: 300px;
         height: 50px;
         padding: 8px;
         margin: 15px;
-        font-size: 20px
     }
 
+    #hero-button a {
+        font-size: 20px;
+    }
+    
     .flavour-info {
-        margin: 20px
+        padding-right: 0;
+        margin-left: 0;
     }
 
     .flavour-info p {
-        font-size: 20px;
-        margin-left: 25px;
-    }
-    
-    .can-image img {
-        min-width: 175px;
-        height: 175px;
+        font-size: 1.2vw;
     }
 
-    .product-info {
-        margin-top: 50px;
-        line-height: 50px;
-        margin-bottom: 30px;
+    .product-info h4 {
+        font-size: 2vw;
+        line-height: 3vw;
     }
-    .comment {
-        justify-content: center;
+
+    .can-image img {
+        min-width: 225px;
+        height: 225px;
     }
+
+    #image-gallery {
+        margin: 0 40px 80px 40px;
+    }
+
+    #prev-button, #next-button {
+        width: 140px;
+        font-size: 20px;
+    }
+
     .comment img {
-        min-width: 50px;
-        min-height: 50px;
+        min-width: 150px;
+        min-height: 150px;
     }
 
     .comment p {
-        width: 650px;
-        font-size: 18px;
+        font-size: 1.4vw;
     }
 
-    #connect h3 {
+    .connect-icons img {
+        width: 125px;
+    }
+
+    #footer-nav ul li a {
+        font-size: 24px;
+    }
+
+    #contact-info {
+        line-height: 35px;
+    }
+    #contact-info h3, p  {
         font-size: 20px;
-        margin-left: 15px;
     }
 }
 
 @media screen and (min-width: 1920px) {
+    #logo{
+        width: 225px;
+        margin-bottom: 20px;
+    }
+
+    #profile-icon {
+        min-width: 40px;
+    }
+
+    #shopping-icon {
+        min-width: 75px;    
+    }
+
+    #main-navigation ul li a {
+        font-size: 20px;
+    }
+
+    #hero-title {
+        margin-left: 175px;
+    }
+
     #hero-title h2 {
-        line-height: 125px;
-        font-size: 140px;
+        line-height: 8vw;
+        font-size: 8vw;
      }
 
+    #hero-button {
+        width: 400px;
+        height: 65px;
+        padding: 8px;
+        margin: 15px;
+        border: 4px solid #4C2612;
+    }
+
+    #hero-button a {
+        font-size: 28px;
+    }
+
+    #hero-main {
+        height: 35vw
+    }
+
+    .poppins-regular-h2 {
+        font-size: 68px;
+    }
+    
+    .poppins-bold {
+        line-height: 58px;
+    }
+
+    .poppins-regular-text {
+        font-size: 34px;
+    }
+    
      .can-image img {
-        width: 500px;
-        height: 500px;
-}
+        min-width: 300px;
+        height: 300px;
+    }
+
+    #prev-button, #next-button {
+        width: 170px;
+        font-size: 26px;
+    }
+
+    .comment img {
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .comment p {
+        font-size: 1.2vw;
+    }
+
+    .connect-icons img {
+        margin: 30px;
+        width: 150px;
+    }
 }
 
 
@@ -718,9 +816,17 @@ footer {
     text-shadow: 2px 6px 2cqb #F9F3E8;
 }
 
+.flavours-section h3 {
+    margin: 0px 15px 15px 15px;
+}
+
+.flavours-section h3 {
+    text-align: left;
+}
+
 .flavours2 {
     color: #D82E36;
-    font-size: 30px;
+    font-size: 6vw;
 }
 
 .see-product2 {
@@ -732,6 +838,7 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    font-size: 18px;;
 }
 
 .see-product2:hover {
@@ -751,17 +858,15 @@ footer {
 }
 
 .flavour-info2 {
-    font-size: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    text-align: left;
     margin: 10px;
 }
 
-.flavour-info2 p {
-    padding-left: 10px;
+.flavour-info2 h3 {
+    text-align: center;
 }
 
 .flavour-info2 img {
@@ -784,20 +889,21 @@ footer {
     border: 2px solid #4C2612;
     border-radius: 2px;
     margin: 5px;
-    width: 75px;
-    height: 25px;
+    width: 55px;
+    height: 35px;
+    font-size: 16px;
     text-align: center;
 }
 
 .add-to-cart {
-    width: 100px;
-    height: 25px;
+    width: 130px;
+    height: 35px;
     background-color: #f7cfde;
     border: 2px solid #4C2612;
     border-radius: 2px;
     margin: 5px;
-    text-align: left;
-    font-size: 12px;
+    text-align: center;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -843,7 +949,6 @@ footer {
     padding-top: 5%;
 }
 
-/* turn the lightbox on using the :target pseudo selector */
 .lightbox:target { display: block; }
 
 .lb_heading {
@@ -877,22 +982,35 @@ footer {
 @media screen and (min-width: 768px) {
     .product-header {
         font-size: 100px;
-        margin-top: 15px;
+        margin-top: 50px;
         text-align: left;
     }
     
-    .see-product2 {
-        width: 250px;
+    .flavours-section h2 {
+        font-size: 2vw;
     }
-    .can-image2 img  {
-            width: 300px;
-            height: 300px;
-            border: 2px solid #4C2612;
-            border-radius: 50%;
-        }
 
-    .can-image3 {
-        margin-top: 45px
+    .flavours2 {
+        color: #D82E36;
+        font-size: 3.4vw;
+    }
+
+    .see-product2 {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .counter-value {
+        margin: 10px;
+        width: 50px;
+        height: 45px;
+        font-size: 20px;
+    }
+    
+    .add-to-cart {
+        width: 200px;
+        height: 45px;
+        font-size: 20px;
     }
 
     .lb_heading {
@@ -906,28 +1024,66 @@ footer {
     
     .lb_text2 {
         font-size: 20px;
-}
+}}
 
 
 @media screen and (min-width: 1200px) {
-.flavour-info2 p {
-    font-size: 16px;
-}
+    .flavours-section h2 {
+        font-size: 1.8vw;
+    }
 
-.lb_heading {
-    font-size: 50px;
-}
+    .flavours2 {
+        color: #D82E36;
+        font-size: 3vw;
+    }
 
-.lb_text { 
-    font-size: 26px;
-}
+    .see-product2 {
+        font-size: 26px;
+        width: 400px;
+    }
+
+    .lb_heading {
+        font-size: 50px;
+    }
+
+    .lb_text { 
+        font-size: 26px;
+    }
 
 
-.lb_text2 {
-    font-size: 26px;
-}}
+    .lb_text2 {
+        font-size: 26px;
+    }}
 
 @media screen and (min-width: 1920px) {
+
+    .flavours-section h2 {
+        font-size: 1.4vw;
+    }
+
+    .flavours2 {
+        color: #D82E36;
+        font-size: 2.6vw;
+    }
+
+    .see-product2 {
+        font-size: 26px;
+        width: 400px;
+    }
+
+    .counter-value {
+        margin: 10px;
+        width: 75px;
+        height: 55px;
+        font-size: 26px;
+    }
+    
+    .add-to-cart {
+        width: 200px;
+        height: 55px;
+        font-size: 26px;
+    }
+
     .lb_heading {
         font-size: 70px;
     }
@@ -939,8 +1095,7 @@ footer {
     
     .lb_text2 {
         font-size: 36px;
-    }}
-    
+    }
 }
 
 
@@ -952,19 +1107,26 @@ footer {
 
 #contact-box {
     background-color: #F9F3E8;
+    padding: 0 35px 55px 35px;
 }
+
 #contact-box h3 {
+    font-size: 6vw;
     color: #D82E36;
     padding-left: 25px;
     margin-bottom: 10px;
 }
-#contact-box h2{ 
+
+#contact-box h2 { 
+    font-size: 2.5vw;
     padding-left: 25px;
     margin-bottom: 10px;
 }
+
 #contact-box form {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
  }
  
  #contact-form input {
@@ -978,6 +1140,7 @@ footer {
  }
 
  #contact-form textarea {
+    width: 375px;
     font-family: inherit;
     margin: 15px 25px 15px 15px;
     padding: 15px;
@@ -1004,12 +1167,73 @@ footer {
     background-color: #c07777;
 
  }
- 
- #strawberry-milk {
-    margin-top: 20px;
-    margin-bottom: 30px;
+
+@media screen and (min-width: 768px) {
+#contact-box h3 {
+    font-size: 4vw;
+}
+#contact-form input, textarea {
+    font-size: 22px
+}
+#contact-box form {
+    margin-top: 20px
+}
+#contact-form input {
+    width: 450px;
 }
 
-#strawberry-milk img {
-    height: auto;
+#contact-form textarea {
+    width: 700px
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+    #contact-form input {
+        width: 300px;
+    }
+    
+    #contact-box h3 {
+        font-size: 2.5vw;
+    }
+    #contact-box h2 {
+        font-size: 1.8vw;
+    }
+
+    #contact-form input {
+        width: 450px;
+    }
+    
+    #contact-form textarea {
+        width: 700px
+    }
+
+    #contact-form input[type="submit"] {
+        padding: 12px 28px;
+        font-size: 30px;
+        background: #D82E36;
+        color: #fff;
+        border: 2px solid #4C2612;
+        transition: all 200ms ease-in;
+        width: 300px;
+        align-self: flex-start;
+     }
+} 
+
+@media screen and (min-width: 1920px) {
+
+#contact-form input {
+    width: 550px;
+    height: 100px;
+    font-size: 28px;
+}
+
+#contact-form textarea {
+    width: 900px;
+    height: 400px;
+    font-size: 28px
+}
+
+
+
 }
