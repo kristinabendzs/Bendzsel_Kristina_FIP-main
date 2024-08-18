@@ -26,11 +26,6 @@ body, p, h1, h2, h3, h4, h5 {
 
 /* ---Mobile Library Grid Styles--- */
 
-.full-width-grid-con {
- display: grid;
- grid-template-columns: 1fr minmax(0, 1200px) 1fr;
-}
-
 .grid-con {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
